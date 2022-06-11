@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9": {
+      "ProjectGuid": "ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9",
+      "DisplayName": "Raven",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

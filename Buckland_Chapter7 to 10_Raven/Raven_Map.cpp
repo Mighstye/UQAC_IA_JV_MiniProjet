@@ -11,6 +11,7 @@
 #include "triggers/Trigger_WeaponGiver.h"
 #include "triggers/Trigger_OnButtonSendMsg.h"
 #include "triggers/Trigger_SoundNotify.h"
+#include "triggers/Trigger_DropWeapon.h"
 
 #include "Raven_UserOptions.h"
 
@@ -188,6 +189,8 @@ bool Raven_Map::LoadMap(const std::string& filename)
   m_pNavGraph = new NavGraph(false);
   
   m_pNavGraph->Load(in);
+  
+  SetFileDropWeapon(&in);
 
 #ifdef LOG_CREATIONAL_STUFF
     debug_con << "NavGraph for " << filename << " loaded okay" << "";
@@ -275,6 +278,9 @@ bool Raven_Map::LoadMap(const std::string& filename)
 
    case type_rocket_launcher:
      
+       AddWeapon_Giver(type_rocket_launcher, in); break;
+
+   case type_weapons_drop:
        AddWeapon_Giver(type_rocket_launcher, in); break;
 
     default:

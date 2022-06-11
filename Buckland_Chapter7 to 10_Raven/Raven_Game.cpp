@@ -25,11 +25,17 @@
 
 #include "goals/Goal_Think.h"
 #include "goals/Raven_Goal_Types.h"
+#include "Debug/DebugConsole.h"
+#include <misc/Stream_Utility_Functions.h>
+#include "triggers/TriggerSystem.h"
+#include "triggers/Trigger_DropWeapon.h"
+#include "triggers/Trigger_WeaponGiver.h"
 
 
+typedef std::map<int, Raven_Weapon*>  WeaponMap;
 
 //uncomment to write object creation/deletion to debug console
-//#define  LOG_CREATIONAL_STUFF
+#define  LOG_CREATIONAL_STUFF
 
 
 //----------------------------- ctor ------------------------------------------
@@ -42,6 +48,7 @@ Raven_Game::Raven_Game():m_pSelectedBot(NULL),
                          m_pGraveMarkers(NULL)
 {
   //load in the default map
+    
   LoadMap(script->GetString("StartMap"));
 }
 
@@ -162,6 +169,29 @@ void Raven_Game::Update()
     {
       //create a grave
       m_pGraveMarkers->AddGrave((*curBot)->Pos());
+
+      // drop weapon on grave
+      WeaponMap allWeaponInventory = (*curBot)->GetWeaponSys()->GetAllWeaponFromInventory();
+      // Give a spawn to dropped weapons
+
+      WeaponMap::iterator it;
+      std::ifstream* oui = m_pMap->GetFileDropWeapon();
+      //Trigger_WeaponGiver::Trigger_WeapenGiver test = new Trigger_WeaponGiver((*curBot), m_pMap->GetFileDropWeapon());
+
+      for (it = allWeaponInventory.begin(); it != allWeaponInventory.end(); ++it) {
+          Trigger_DropWeapon* test = new Trigger_DropWeapon(curBot, oui);
+          //test->SetEntityType(it->first);
+      }
+      //Raven_Weapon* non = (*curBot)->GetWeaponSys()->GetCurrentWeapon().GetType();
+      //test->SetEntityType();
+      //m_pMap->GetTriggerSystem().Register(test);
+      //let the corresponding navgraph node point to this object
+      //Raven_Map::GraphNode test2 = m_pMap->GetNavGraph().GetNode(test->GraphNodeIndex());
+      //test2.SetExtraInfo(test);
+
+      //register the entity 
+      //EntityMgr->RegisterEntity(test);
+      //triggerSystem->Render();
 
       //change its status to spawning
       (*curBot)->SetSpawning();

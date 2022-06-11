@@ -1,0 +1,1049 @@
+﻿++Solution 'Raven' ‎(1 sur 1 projets)
+i:{00000000-0000-0000-0000-000000000000}:Raven.sln
+++Raven ‎(Visual Studio 2019)
+i:{00000000-0000-0000-0000-000000000000}:Raven
+++Références
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:{E639D48D-49AF-4538-BDEF-60A808542E9A}
+++Dépendances externes
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:{856B492E-B713-4B18-9A56-879BF9D0F973}
+++AI
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:AI
+++fuzzy logic
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:AI\fuzzy logic
+++goals
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:AI\goals
+++atomic
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:AI\goals\atomic
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\ATOMIC
+++composite
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:AI\goals\composite
+++Goal_AdjustRange.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_AdjustRange.cpp
+++Goal_AdjustRange.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_AdjustRange.h
+++Goal_AttackTarget.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_AttackTarget.cpp
+++Goal_AttackTarget.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_AttackTarget.h
+++Goal_Composite.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Goals\Goal_Composite.h
+++Goal_Explore.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_Explore.cpp
+++Goal_Explore.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_Explore.h
+++Goal_FollowPath.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_FollowPath.cpp
+++Goal_FollowPath.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_FollowPath.h
+++Goal_GetItem.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_GetItem.cpp
+++Goal_GetItem.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_GetItem.h
+++Goal_HuntTarget.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_HuntTarget.cpp
+++Goal_HuntTarget.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_HuntTarget.h
+++Goal_MoveToPosition.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_MoveToPosition.cpp
+++Goal_MoveToPosition.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_MoveToPosition.h
+++Goal_NegotiateDoor.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_NegotiateDoor.cpp
+++Goal_NegotiateDoor.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_NegotiateDoor.h
+++Goal_Think.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_Think.cpp
+++Goal_Think.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_Think.h
+++goal evaluation
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:AI\goals\goal evaluation
+++AttackTargetGoal_Evaluator.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\AttackTargetGoal_Evaluator.cpp
+++AttackTargetGoal_Evaluator.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\AttackTargetGoal_Evaluator.h
+++ExploreGoal_Evaluator.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\ExploreGoal_Evaluator.cpp
+++ExploreGoal_Evaluator.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\ExploreGoal_Evaluator.h
+++GetHealthGoal_Evaluator.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\GetHealthGoal_Evaluator.cpp
+++GetHealthGoal_Evaluator.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\GetHealthGoal_Evaluator.h
+++GetWeaponGoal_Evaluator.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\GetWeaponGoal_Evaluator.cpp
+++GetWeaponGoal_Evaluator.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\GetWeaponGoal_Evaluator.h
+++Goal_Evaluator.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_Evaluator.h
+++Raven_Feature.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Raven_Feature.cpp
+++Raven_Feature.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Raven_Feature.h
+++Raven_Goal_Types.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Raven_Goal_Types.cpp
+++Raven_Goal_Types.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Raven_Goal_Types.h
+++Messaging
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:AI\Messaging
+++Movement & Navigation
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:AI\Movement & Navigation
+++Sensory Memory
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:AI\Sensory Memory
+++Target Selection
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:AI\Target Selection
+++Triggers
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:AI\Triggers
+++Trigger.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Triggers\Trigger.h
+++Trigger_HealthGiver.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\triggers\Trigger_HealthGiver.cpp
+++Trigger_HealthGiver.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\triggers\Trigger_HealthGiver.h
+++Trigger_LimitedLifeTime.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Triggers\Trigger_LimitedLifeTime.h
+++Trigger_OnButtonSendMsg.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\triggers\Trigger_OnButtonSendMsg.h
+++Trigger_ReSpawning.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Triggers\Trigger_ReSpawning.h
+++Trigger_SoundNotify.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\triggers\Trigger_SoundNotify.cpp
+++Trigger_SoundNotify.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\triggers\Trigger_SoundNotify.h
+++Trigger_WeaponGiver.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\triggers\Trigger_WeaponGiver.cpp
+++Trigger_WeaponGiver.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\triggers\Trigger_WeaponGiver.h
+++TriggerRegion.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Triggers\TriggerRegion.h
+++TriggerSystem.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Triggers\TriggerSystem.h
+++Weapon Handling
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:AI\Weapon Handling
+++Common
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:Common
+++Game
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:Game
+++Base entity classes
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:Game\Base entity classes
+++BaseGameEntity.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Game\BaseGameEntity.cpp
+++BaseGameEntity.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Game\BaseGameEntity.h
+++EntityFunctionTemplates.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Game\EntityFunctionTemplates.h
+++MovingEntity.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Game\MovingEntity.h
+++misc
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:Game\misc
+++constants.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\constants.h
+++EntityManager.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Game\EntityManager.cpp
+++EntityManager.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Game\EntityManager.h
+++GraveMarkers.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\GraveMarkers.cpp
+++GraveMarkers.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\GraveMarkers.h
+++Raven_Door.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_Door.cpp
+++Raven_Door.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_Door.h
+++Raven_ObjectEnumerations.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_ObjectEnumerations.h
+++Raven_UserOptions.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_UserOptions.cpp
+++Raven_UserOptions.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_UserOptions.h
+++Script related
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:Game\Script related
+++weapons & projectiles
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:Game\weapons & projectiles
+++projectiles
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:Game\weapons & projectiles\projectiles
+++Projectile_Bolt.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Projectile_Bolt.cpp
+++Projectile_Bolt.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Projectile_Bolt.h
+++Projectile_Pellet.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Projectile_Pellet.cpp
+++Projectile_Pellet.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Projectile_Pellet.h
+++Projectile_Rocket.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Projectile_Rocket.cpp
+++Projectile_Rocket.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Projectile_Rocket.h
+++Projectile_Slug.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Projectile_Slug.cpp
+++Projectile_Slug.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Projectile_Slug.h
+++Raven_Projectile.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Raven_Projectile.cpp
+++Raven_Projectile.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Raven_Projectile.h
+++weapons
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:Game\weapons & projectiles\weapons
+++Raven_Weapon.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Raven_Weapon.cpp
+++Raven_Weapon.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Raven_Weapon.h
+++Weapon_Blaster.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Weapon_Blaster.cpp
+++Weapon_Blaster.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Weapon_Blaster.h
+++Weapon_RailGun.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Weapon_RailGun.cpp
+++Weapon_RailGun.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Weapon_RailGun.h
+++Weapon_RocketLauncher.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Weapon_RocketLauncher.cpp
+++Weapon_RocketLauncher.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Weapon_RocketLauncher.h
+++Weapon_ShotGun.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Weapon_ShotGun.cpp
+++Weapon_ShotGun.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\armory\Weapon_ShotGun.h
+++main.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\main.cpp
+++Raven_Bot.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_Bot.cpp
+++Raven_Bot.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_Bot.h
+++Raven_Game.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_Game.cpp
+++Raven_Game.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_Game.h
+++Raven_Map.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_Map.cpp
+++Raven_Map.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_Map.h
+++Resource Files
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:Resource Files
+++maps
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:Resource Files\maps
+++note.txt
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\note.txt
+++resource.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\resource.h
+++Script1.rc
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Script1.rc
+++__msvc_system_error_abi.hpp
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\__MSVC_SYSTEM_ERROR_ABI.HPP
+++algorithm
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\ALGORITHM
+++ammintrin.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\AMMINTRIN.H
+++apiquery2.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\APIQUERY2.H
+++apiset.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\APISET.H
+++apisetcconv.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\APISETCCONV.H
+++arm_neon.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\ARM_NEON.H
+++arm64_neon.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\ARM64_NEON.H
+++arm64intr.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\ARM64INTR.H
+++armintr.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\ARMINTR.H
+++assert.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\ASSERT.H
+++basetsd.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\BASETSD.H
+++bcrypt.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\BCRYPT.H
+++bit
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\BIT
+++cassert
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CASSERT
+++cctype
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CCTYPE
+++cderr.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\CDERR.H
+++cerrno
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CERRNO
+++cfloat
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CFLOAT
+++cguid.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\CGUID.H
+++climits
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CLIMITS
+++clocale
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CLOCALE
+++cmath
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CMATH
+++combaseapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\COMBASEAPI.H
+++coml2api.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\COML2API.H
+++CommCtrl.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\COMMCTRL.H
+++commctrl.inl
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\COMMCTRL.INL
+++commctrl.rh
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\COMMCTRL.RH
+++commdlg.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\COMMDLG.H
+++commdlg.inl
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\COMMDLG.INL
+++compare
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\COMPARE
+++concepts
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CONCEPTS
+++concurrencysal.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CONCURRENCYSAL.H
+++consoleapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\CONSOLEAPI.H
+++consoleapi2.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\CONSOLEAPI2.H
+++consoleapi3.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\CONSOLEAPI3.H
+++corecrt.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT.H
+++corecrt_io.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_IO.H
+++corecrt_malloc.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_MALLOC.H
+++corecrt_math.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_MATH.H
+++corecrt_math_defines.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_MATH_DEFINES.H
+++corecrt_memcpy_s.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_MEMCPY_S.H
+++corecrt_memory.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_MEMORY.H
+++corecrt_search.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_SEARCH.H
+++corecrt_share.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_SHARE.H
+++corecrt_stdio_config.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_STDIO_CONFIG.H
+++corecrt_terminate.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_TERMINATE.H
+++corecrt_wconio.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_WCONIO.H
+++corecrt_wctype.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_WCTYPE.H
+++corecrt_wdirect.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_WDIRECT.H
+++corecrt_wio.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_WIO.H
+++corecrt_wprocess.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_WPROCESS.H
+++corecrt_wstdio.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_WSTDIO.H
+++corecrt_wstdlib.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_WSTDLIB.H
+++corecrt_wstring.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_WSTRING.H
+++corecrt_wtime.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CORECRT_WTIME.H
+++crtdbg.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CRTDBG.H
+++crtdefs.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CRTDEFS.H
+++cstddef
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CSTDDEF
+++cstdint
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CSTDINT
+++cstdio
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CSTDIO
+++cstdlib
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CSTDLIB
+++cstring
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CSTRING
+++ctime
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CTIME
+++ctype.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CTYPE.H
+++cwchar
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CWCHAR
+++datetimeapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\DATETIMEAPI.H
+++dde.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\DDE.H
+++dde.rh
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\DDE.RH
+++ddeml.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\DDEML.H
+++debugapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\DEBUGAPI.H
+++deque
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\DEQUE
+++dlgs.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\DLGS.H
+++dpa_dsa.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\DPA_DSA.H
+++dpa_dsa.inl
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\DPA_DSA.INL
+++dpapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\DPAPI.H
+++driverspecs.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\DRIVERSPECS.H
+++eh.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\EH.H
+++emmintrin.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\EMMINTRIN.H
+++enclaveapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\ENCLAVEAPI.H
+++errhandlingapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\ERRHANDLINGAPI.H
+++errno.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\ERRNO.H
+++exception
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\EXCEPTION
+++excpt.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\EXCPT.H
+++fibersapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\FIBERSAPI.H
+++fileapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\FILEAPI.H
+++fileapifromapp.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\FILEAPIFROMAPP.H
+++float.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\FLOAT.H
+++fstream
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\FSTREAM
+++guiddef.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\GUIDDEF.H
+++handleapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\HANDLEAPI.H
+++heapapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\HEAPAPI.H
+++ime_cmodes.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\IME_CMODES.H
+++imm.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\IMM.H
+++immintrin.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\IMMINTRIN.H
+++inaddr.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\INADDR.H
+++initializer_list
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\INITIALIZER_LIST
+++interlockedapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\INTERLOCKEDAPI.H
+++intrin.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\INTRIN.H
+++intrin0.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\INTRIN0.H
+++intrin0.inl.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\INTRIN0.INL.H
+++io.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\IO.H
+++ioapiset.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\IOAPISET.H
+++iomanip
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\IOMANIP
+++ios
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\IOS
+++iosfwd
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\IOSFWD
+++iostream
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\IOSTREAM
+++isa_availability.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\ISA_AVAILABILITY.H
+++istream
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\ISTREAM
+++iterator
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\ITERATOR
+++jobapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\JOBAPI.H
+++jobapi2.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\JOBAPI2.H
+++joystickapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\JOYSTICKAPI.H
+++kernelspecs.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\KERNELSPECS.H
+++ktmtypes.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\KTMTYPES.H
+++libloaderapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\LIBLOADERAPI.H
+++limits
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\LIMITS
+++limits.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\LIMITS.H
+++list
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\LIST
+++locale
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\LOCALE
+++locale.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\LOCALE.H
+++luaconf.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\USERS\AUBAN\DESKTOP\UQAC\125 - INTELLIGENCE ARTIFICIELLE\PROJETS\UQAC_IA_JV_MINIPROJET\COMMON\LUA-5.1.3\INCLUDE\LUACONF.H
+++lzexpand.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\LZEXPAND.H
+++malloc.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\MALLOC.H
+++map
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\MAP
+++math.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\MATH.H
+++mciapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\MCIAPI.H
+++mcx.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\MCX.H
+++memory
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\MEMORY
+++memoryapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\MEMORYAPI.H
+++minwinbase.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\MINWINBASE.H
+++minwindef.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\MINWINDEF.H
+++mm3dnow.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\MM3DNOW.H
+++mmeapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\MMEAPI.H
+++mmintrin.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\MMINTRIN.H
+++mmiscapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\MMISCAPI.H
+++mmiscapi2.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\MMISCAPI2.H
+++mmsyscom.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\MMSYSCOM.H
+++mmsystem.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\MMSYSTEM.H
+++msxml.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\MSXML.H
+++namedpipeapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\NAMEDPIPEAPI.H
+++namespaceapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\NAMESPACEAPI.H
+++nb30.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\NB30.H
+++ncrypt.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\NCRYPT.H
+++new
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\NEW
+++nmmintrin.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\NMMINTRIN.H
+++no_sal2.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\NO_SAL2.H
+++OAIdl.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\OAIDL.H
+++objbase.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\OBJBASE.H
+++ObjIdl.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\OBJIDL.H
+++ObjIdlbase.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\OBJIDLBASE.H
+++ole.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\OLE.H
+++Ole2.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\OLE2.H
+++OleAuto.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\OLEAUTO.H
+++oleidl.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\OLEIDL.H
+++ostream
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\OSTREAM
+++playsoundapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\PLAYSOUNDAPI.H
+++pmmintrin.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\PMMINTRIN.H
+++poppack.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\POPPACK.H
+++processenv.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\PROCESSENV.H
+++processthreadsapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\PROCESSTHREADSAPI.H
+++processtopologyapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\PROCESSTOPOLOGYAPI.H
+++profileapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\PROFILEAPI.H
+++PropIdl.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\PROPIDL.H
+++PropIdlBase.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\PROPIDLBASE.H
+++prsht.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\PRSHT.H
+++prsht.inl
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\PRSHT.INL
+++pshpack1.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\PSHPACK1.H
+++pshpack2.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\PSHPACK2.H
+++pshpack4.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\PSHPACK4.H
+++pshpack8.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\PSHPACK8.H
+++queue
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\QUEUE
+++realtimeapiset.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\REALTIMEAPISET.H
+++reason.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\REASON.H
+++regex
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\REGEX
+++rpc.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\RPC.H
+++rpcasync.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\RPCASYNC.H
+++rpcdce.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\RPCDCE.H
+++rpcdcep.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\RPCDCEP.H
+++rpcndr.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\RPCNDR.H
+++rpcnsi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\RPCNSI.H
+++rpcnsip.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\RPCNSIP.H
+++rpcnterr.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\RPCNTERR.H
+++rpcsal.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\RPCSAL.H
+++sal.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\SAL.H
+++SCardErr.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\SCARDERR.H
+++sdkddkver.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\SDKDDKVER.H
+++sdv_driverspecs.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\SDV_DRIVERSPECS.H
+++securityappcontainer.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\SECURITYAPPCONTAINER.H
+++securitybaseapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\SECURITYBASEAPI.H
+++servprov.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\SERVPROV.H
+++set
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\SET
+++setjmp.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\SETJMP.H
+++setjmpex.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\SETJMPEX.H
+++share.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\SHARE.H
+++shellapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\SHELLAPI.H
+++smmintrin.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\SMMINTRIN.H
+++sourceannotations.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\CODEANALYSIS\SOURCEANNOTATIONS.H
+++specstrings.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\SPECSTRINGS.H
+++specstrings_strict.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\SPECSTRINGS_STRICT.H
+++specstrings_undef.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\SPECSTRINGS_UNDEF.H
+++sstream
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\SSTREAM
+++stack
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\STACK
+++stat.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\SYS\STAT.H
+++stdarg.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\STDARG.H
+++stddef.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\STDDEF.H
+++stdexcept
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\STDEXCEPT
+++stdint.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\STDINT.H
+++stdio.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\STDIO.H
+++stdlib.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\STDLIB.H
+++stralign.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\STRALIGN.H
+++streambuf
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\STREAMBUF
+++string
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\STRING
+++string.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\STRING.H
+++stringapiset.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\STRINGAPISET.H
+++synchapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\SYNCHAPI.H
+++sysinfoapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\SYSINFOAPI.H
+++system_error
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\SYSTEM_ERROR
+++systemtopologyapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\SYSTEMTOPOLOGYAPI.H
+++threadpoolapiset.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\THREADPOOLAPISET.H
+++threadpoollegacyapiset.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\THREADPOOLLEGACYAPISET.H
+++time.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\TIME.H
+++timeapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\TIMEAPI.H
+++timezoneapi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\TIMEZONEAPI.H
+++tmmintrin.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\TMMINTRIN.H
+++tuple
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\TUPLE
+++tvout.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\TVOUT.H
+++type_traits
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\TYPE_TRAITS
+++typeinfo
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\TYPEINFO
+++types.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\SYS\TYPES.H
+++TypeToString.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\USERS\AUBAN\DESKTOP\UQAC\125 - INTELLIGENCE ARTIFICIELLE\PROJETS\UQAC_IA_JV_MINIPROJET\COMMON\MISC\TYPETOSTRING.H
+++Unknwn.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\UNKNWN.H
+++Unknwnbase.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\UNKNWNBASE.H
+++unordered_map
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\UNORDERED_MAP
+++urlmon.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\URLMON.H
+++use_ansi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\USE_ANSI.H
+++utilapiset.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\UTILAPISET.H
+++utility
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\UTILITY
+++vadefs.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\VADEFS.H
+++vcruntime.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\VCRUNTIME.H
+++vcruntime_exception.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\VCRUNTIME_EXCEPTION.H
+++vcruntime_new.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\VCRUNTIME_NEW.H
+++vcruntime_new_debug.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\VCRUNTIME_NEW_DEBUG.H
+++vcruntime_string.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\VCRUNTIME_STRING.H
+++vcruntime_typeinfo.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\VCRUNTIME_TYPEINFO.H
+++vector
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\VECTOR
+++verrsrc.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\VERRSRC.H
+++wchar.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\WCHAR.H
+++winapifamily.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\WINAPIFAMILY.H
+++WinBase.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINBASE.H
+++winbase.inl
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINBASE.INL
+++wincon.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINCON.H
+++wincontypes.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINCONTYPES.H
+++wincrypt.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINCRYPT.H
+++windef.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\WINDEF.H
+++Windows.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINDOWS.H
+++winefs.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINEFS.H
+++winerror.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\WINERROR.H
+++wingdi.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINGDI.H
+++winioctl.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINIOCTL.H
+++winnetwk.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINNETWK.H
+++WinNls.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINNLS.H
+++winnt.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINNT.H
+++winnt.rh
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINNT.RH
+++winpackagefamily.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\WINPACKAGEFAMILY.H
+++winperf.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINPERF.H
+++winreg.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINREG.H
+++winresrc.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINRESRC.H
+++winscard.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINSCARD.H
+++winsmcrd.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\WINSMCRD.H
+++winsock.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINSOCK.H
+++winspool.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINSPOOL.H
+++winsvc.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINSVC.H
+++WinUser.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINUSER.H
+++winuser.inl
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINUSER.INL
+++winuser.rh
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINUSER.RH
+++winver.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WINVER.H
+++wmmintrin.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\WMMINTRIN.H
+++wnnc.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\WNNC.H
+++wow64apiset.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\WOW64APISET.H
+++wtypes.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\WTYPES.H
+++WTypesbase.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\WTYPESBASE.H
+++xatomic.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XATOMIC.H
+++xatomic_wait.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XATOMIC_WAIT.H
+++xbit_ops.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XBIT_OPS.H
+++xcall_once.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XCALL_ONCE.H
+++xerrc.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XERRC.H
+++xfacet
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XFACET
+++xhash
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XHASH
+++xiosbase
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XIOSBASE
+++xkeycheck.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XKEYCHECK.H
+++xlocale
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XLOCALE
+++xlocbuf
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XLOCBUF
+++xlocinfo
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XLOCINFO
+++xlocinfo.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XLOCINFO.H
+++xlocmes
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XLOCMES
+++xlocmon
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XLOCMON
+++xlocnum
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XLOCNUM
+++xloctime
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XLOCTIME
+++xmemory
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XMEMORY
+++xmmintrin.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XMMINTRIN.H
+++xnode_handle.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XNODE_HANDLE.H
+++xpolymorphic_allocator.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XPOLYMORPHIC_ALLOCATOR.H
+++xstddef
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XSTDDEF
+++xstring
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XSTRING
+++xthreads.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XTHREADS.H
+++xtimec.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XTIMEC.H
+++xtr1common
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XTR1COMMON
+++xtree
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XTREE
+++xutility
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\XUTILITY
+++yvals.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\YVALS.H
+++yvals_core.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\YVALS_CORE.H
+++zmmintrin.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\INCLUDE\ZMMINTRIN.H
+++fuzzy set types
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:AI\fuzzy logic\fuzzy set types
+++FuzzyHedges.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzyHedges.h
+++FuzzyModule.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzyModule.cpp
+++FuzzyModule.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzyModule.h
+++FuzzyOperators.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzyOperators.cpp
+++FuzzyOperators.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzyOperators.h
+++FuzzyRule.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzyRule.h
+++FuzzyTerm.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzyTerm.h
+++FuzzyVariable.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzyVariable.cpp
+++FuzzyVariable.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzyVariable.h
+++FzSet.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FzSet.h
+++Goal.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Goals\Goal.h
+++Goal_DodgeSideToSide.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_DodgeSideToSide.cpp
+++Goal_DodgeSideToSide.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_DodgeSideToSide.h
+++Goal_SayPhrase.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_SayPhrase.cpp
+++Goal_SayPhrase.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_SayPhrase.h
+++Goal_SeekToPosition.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_SeekToPosition.cpp
+++Goal_SeekToPosition.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_SeekToPosition.h
+++Goal_TraverseEdge.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_TraverseEdge.cpp
+++Goal_TraverseEdge.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_TraverseEdge.h
+++Goal_Wander.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_Wander.cpp
+++Goal_Wander.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\goals\Goal_Wander.h
+++MessageDispatcher.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Messaging\MessageDispatcher.cpp
+++MessageDispatcher.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Messaging\MessageDispatcher.h
+++Raven_Messages.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_Messages.h
+++Telegram.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Messaging\Telegram.h
+++AStarHeuristicPolicies.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Graph\AStarHeuristicPolicies.h
+++CellSpacePartition.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\misc\CellSpacePartition.h
+++GraphAlgorithms.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Graph\GraphAlgorithms.h
+++GraphEdgeTypes.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Graph\GraphEdgeTypes.h
+++GraphNodeTypes.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Graph\GraphNodeTypes.h
+++HandyGraphFunctions.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Graph\HandyGraphFunctions.h
+++NodeTypeEnumerations.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Graph\NodeTypeEnumerations.h
+++PathEdge.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\navigation\PathEdge.h
+++PathManager.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\navigation\PathManager.h
+++Raven_PathPlanner.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\navigation\Raven_PathPlanner.cpp
+++Raven_PathPlanner.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\navigation\Raven_PathPlanner.h
+++Raven_SteeringBehaviors.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_SteeringBehaviors.cpp
+++Raven_SteeringBehaviors.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_SteeringBehaviors.h
+++SearchTerminationPolicies.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\navigation\SearchTerminationPolicies.h
+++SparseGraph.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Graph\SparseGraph.h
+++TimeSlicedGraphAlgorithms.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\navigation\TimeSlicedGraphAlgorithms.h
+++Raven_SensoryMemory.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_SensoryMemory.cpp
+++Raven_SensoryMemory.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_SensoryMemory.h
+++Raven_TargetingSystem.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_TargetingSystem.cpp
+++Raven_TargetingSystem.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_TargetingSystem.h
+++Raven_WeaponSystem.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_WeaponSystem.cpp
+++Raven_WeaponSystem.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Raven_WeaponSystem.h
+++C2DMatrix.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\2D\C2DMatrix.h
+++Cgdi.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\misc\Cgdi.cpp
+++Cgdi.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\misc\Cgdi.h
+++CrudeTimer.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Time\CrudeTimer.cpp
+++CrudeTimer.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Time\CrudeTimer.h
+++DebugConsole.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Debug\DebugConsole.cpp
+++DebugConsole.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Debug\DebugConsole.h
+++FrameCounter.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\misc\FrameCounter.cpp
+++FrameCounter.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\misc\FrameCounter.h
+++geometry.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\2D\geometry.h
+++InvertedAABBox2D.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\2D\InvertedAABBox2D.h
+++PrecisionTimer.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Time\PrecisionTimer.cpp
+++PrecisionTimer.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Time\PrecisionTimer.h
+++PriorityQueue.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\misc\PriorityQueue.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\PriorityQueue.h
+++Regulator.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\Time\Regulator.h
+++Stream_Utility_Functions.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\misc\Stream_Utility_Functions.h
+++Transformations.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\2D\Transformations.h
+++utils.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\misc\utils.h
+++Vector2d.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\2D\Vector2d.cpp
+++Vector2D.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\2D\Vector2D.h
+++Wall2D.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\2D\Wall2D.h
+++WallIntersectionTests.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\2D\WallIntersectionTests.h
+++WindowUtils.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\misc\WindowUtils.cpp
+++WindowUtils.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\misc\WindowUtils.h
+++general
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:Game\Script related\general
+++lua headers
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:Game\Script related\lua headers
+++Params.lua
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Params.lua
+++Raven_DM1.map
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\maps\Raven_DM1.map
+++Raven_DM1_Doors.map
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\maps\Raven_DM1_Doors.map
+++FuzzySet.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzySet.h
+++FuzzySet_LeftShoulder.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzySet_LeftShoulder.cpp
+++FuzzySet_LeftShoulder.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzySet_LeftShoulder.h
+++FuzzySet_RightShoulder.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzySet_RightShoulder.cpp
+++FuzzySet_RightShoulder.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzySet_RightShoulder.h
+++FuzzySet_Shoulder.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzySet_Shoulder.h
+++FuzzySet_Singleton.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzySet_Singleton.cpp
+++FuzzySet_Singleton.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzySet_Singleton.h
+++FuzzySet_Triangle.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzySet_Triangle.cpp
+++FuzzySet_Triangle.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\fuzzy\FuzzySet_Triangle.h
+++Raven_Scriptor.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\lua\Raven_Scriptor.cpp
+++Raven_Scriptor.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\lua\Raven_Scriptor.h
+++Scriptor.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\script\Scriptor.h
+++lauxlib.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\lua-5.1.3\include\lauxlib.h
+++lua.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\lua-5.1.3\include\lua.h
+++luahelperfunctions.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\lua-5.1.3\include\luahelperfunctions.h
+++lualib.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common\lua-5.1.3\include\lualib.h
+++Trigger_DropWeapon.h
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Trigger_DropWeapon.h
+e:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\USERS\AUBAN\DESKTOP\UQAC\125 - INTELLIGENCE ARTIFICIELLE\PROJETS\UQAC_IA_JV_MINIPROJET\BUCKLAND_CHAPTER7 TO 10_RAVEN\TRIGGERS\TRIGGER_DROPWEAPON.H
+++Trigger_DropWeapon.cpp
+i:{ec1ebbc4-4f57-4002-856a-5c1bcfbc7bf9}:C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Buckland_Chapter7 to 10_Raven\Trigger_DropWeapon.cpp

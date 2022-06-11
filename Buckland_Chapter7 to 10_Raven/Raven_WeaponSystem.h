@@ -13,6 +13,7 @@
 //-----------------------------------------------------------------------------
 #include <map>
 #include "2d/vector2d.h"
+#include "Raven_Map.h"
 
 class Raven_Bot;
 class Raven_Weapon;
@@ -101,10 +102,13 @@ public:
   //not)
   Raven_Weapon* GetWeaponFromInventory(int weapon_type);
 
+  // returns all the weapon in Inventory
+  WeaponMap     GetAllWeaponFromInventory();
+
   //returns the amount of ammo remaining for the specified weapon
   int           GetAmmoRemainingForWeapon(unsigned int weapon_type);
 
-  double         ReactionTime()const{return m_dReactionTime;}
+  double        ReactionTime()const{return m_dReactionTime;}
 
   void          RenderCurrentWeapon()const;
   void          RenderDesirabilities()const;
