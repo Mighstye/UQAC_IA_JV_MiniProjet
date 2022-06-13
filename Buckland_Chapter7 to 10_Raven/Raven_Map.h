@@ -85,7 +85,7 @@ private:
   void AddDoorTrigger(std::ifstream& in);
 
   // SAVE in FILE FOR DROP WEAPON
-  std::ifstream* fileDropWeapon;
+  std::ifstream& fileDropWeapon;
 
   void Clear();
   
@@ -131,9 +131,10 @@ public:
   TriggerSystem GetTriggerSystem() { return m_TriggerSystem; }
   
 
-  // GETTERS AND SETTERS FOR fileDropWeapon
-  std::ifstream* GetFileDropWeapon() { return fileDropWeapon; }
-  void SetFileDropWeapon(std::ifstream* file) { fileDropWeapon = file; }
+  // GETTERS AND SETTERS FOR fileDropWeapon  
+
+  const std::ifstream& GetFileDropWeapon() { return fileDropWeapon; }
+  void SetFileDropWeapon(std::ifstream& file) { fileDropWeapon = file; }
 };
 
 

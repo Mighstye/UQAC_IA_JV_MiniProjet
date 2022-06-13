@@ -91,9 +91,6 @@ void Raven_Game::Clear()
   std::list<Raven_Projectile*>::iterator curW = m_Projectiles.begin();
   for (curW; curW != m_Projectiles.end(); ++curW)
   {
-#ifdef LOG_CREATIONAL_STUFF
-    debug_con << "deleting projectile id: " << (*curW)->ID() << "";
-#endif
 
     delete *curW;
   }
@@ -152,7 +149,7 @@ void Raven_Game::Update()
   
   //update the bots
   bool bSpawnPossible = true;
-  
+
   std::list<Raven_Bot*>::iterator curBot = m_Bots.begin();
   for (curBot; curBot != m_Bots.end(); ++curBot)
   {
@@ -162,6 +159,7 @@ void Raven_Game::Update()
     {
       bSpawnPossible = AttemptToAddBot(*curBot);
     }
+
     
     //if this bot's status is 'dead' add a grave at its current location 
     //then change its status to 'respawning'
@@ -175,23 +173,48 @@ void Raven_Game::Update()
       // Give a spawn to dropped weapons
 
       WeaponMap::iterator it;
-      std::ifstream* oui = m_pMap->GetFileDropWeapon();
+      std::ifstream& oui = m_pMap->GetFileDropWeapon();
       //Trigger_WeaponGiver::Trigger_WeapenGiver test = new Trigger_WeaponGiver((*curBot), m_pMap->GetFileDropWeapon());
 
       for (it = allWeaponInventory.begin(); it != allWeaponInventory.end(); ++it) {
-          Trigger_DropWeapon* test = new Trigger_DropWeapon(curBot, oui);
+          Trigger_DropWeapon* test = new Trigger_DropWeapon((*curBot)->Pos(), (*curBot)->BRadius(), oui);
+          //Trigger_WeaponGiver* test2 = new Trigger_WeaponGiver(*m_pMap->GetFileDropWeapon());
+          //curBot est un arbre
+          
           //test->SetEntityType(it->first);
-      }
-      //Raven_Weapon* non = (*curBot)->GetWeaponSys()->GetCurrentWeapon().GetType();
-      //test->SetEntityType();
-      //m_pMap->GetTriggerSystem().Register(test);
-      //let the corresponding navgraph node point to this object
-      //Raven_Map::GraphNode test2 = m_pMap->GetNavGraph().GetNode(test->GraphNodeIndex());
-      //test2.SetExtraInfo(test);
+          
+          //m_pMap->GetTriggerSystem().Register(test);
+#ifdef LOG_CREATIONAL_STUFF
+          //debug_con << "TYPE OF TEST " << test->ID() << "";
+#endif
+          /*wg->SetEntityType(type_of_weapon);
 
-      //register the entity 
-      //EntityMgr->RegisterEntity(test);
-      //triggerSystem->Render();
+          //add it to the appropriate vectors
+          m_TriggerSystem.Register(wg);
+
+          //let the corresponding navgraph node point to this object
+          NavGraph::NodeType& node = m_pNavGraph->GetNode(wg->GraphNodeIndex());
+
+          node.SetExtraInfo(wg);
+
+          //register the entity 
+          EntityMgr->RegisterEntity(wg);*/
+
+
+          //m_pMap->GetTriggerSystem().Register(test);
+          //Raven_Map::GraphNode test2 = m_pMap->GetNavGraph().GetNode(test.GraphNodeIndex());
+          //test2.SetExtraInfo(&test);
+          //register the entity 
+          //EntityMgr->RegisterEntity(&test);
+          //m_pMap->GetTriggerSystem().Render();
+      }
+
+      //
+      //let the corresponding navgraph node point to this object
+      //
+      //
+
+
 
       //change its status to spawning
       (*curBot)->SetSpawning();
@@ -333,10 +356,6 @@ void Raven_Game::AddBolt(Raven_Bot* shooter, Vector2D target)
   Raven_Projectile* rp = new Bolt(shooter, target);
 
   m_Projectiles.push_back(rp);
-  
-  #ifdef LOG_CREATIONAL_STUFF
-  debug_con << "Adding a bolt " << rp->ID() << " at pos " << rp->Pos() << "";
-  #endif
 }
 
 //------------------------------ AddRocket --------------------------------
@@ -345,10 +364,6 @@ void Raven_Game::AddRocket(Raven_Bot* shooter, Vector2D target)
   Raven_Projectile* rp = new Rocket(shooter, target);
 
   m_Projectiles.push_back(rp);
-  
-  #ifdef LOG_CREATIONAL_STUFF
-  debug_con << "Adding a rocket " << rp->ID() << " at pos " << rp->Pos() << "";
-  #endif
 }
 
 //------------------------- AddRailGunSlug -----------------------------------
@@ -357,10 +372,6 @@ void Raven_Game::AddRailGunSlug(Raven_Bot* shooter, Vector2D target)
   Raven_Projectile* rp = new Slug(shooter, target);
 
   m_Projectiles.push_back(rp);
-  
-  #ifdef LOG_CREATIONAL_STUFF
-  debug_con << "Adding a rail gun slug" << rp->ID() << " at pos " << rp->Pos() << "";
-#endif
 }
 
 //------------------------- AddShotGunPellet -----------------------------------
@@ -369,10 +380,6 @@ void Raven_Game::AddShotGunPellet(Raven_Bot* shooter, Vector2D target)
   Raven_Projectile* rp = new Pellet(shooter, target);
 
   m_Projectiles.push_back(rp);
-  
-  #ifdef LOG_CREATIONAL_STUFF
-  debug_con << "Adding a shotgun shell " << rp->ID() << " at pos " << rp->Pos() << "";
-#endif
 }
 
 

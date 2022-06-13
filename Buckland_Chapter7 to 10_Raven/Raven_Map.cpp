@@ -148,7 +148,7 @@ void Raven_Map::AddHealth_Giver(std::ifstream& in)
 //-----------------------------------------------------------------------------
 void Raven_Map::AddWeapon_Giver(int type_of_weapon, std::ifstream& in)
 {
-  Trigger_WeaponGiver* wg = new Trigger_WeaponGiver(in);
+  Trigger_WeaponGiver* wg = new Trigger_WeaponGiver(in); 
 
   wg->SetEntityType(type_of_weapon);
 
@@ -190,8 +190,6 @@ bool Raven_Map::LoadMap(const std::string& filename)
   
   m_pNavGraph->Load(in);
   
-  SetFileDropWeapon(&in);
-
 #ifdef LOG_CREATIONAL_STUFF
     debug_con << "NavGraph for " << filename << " loaded okay" << "";
 #endif
@@ -298,6 +296,9 @@ bool Raven_Map::LoadMap(const std::string& filename)
 
    //calculate the cost lookup table
   m_PathCosts = CreateAllPairsCostsTable(*m_pNavGraph);
+  
+  // save the in FIle for drop items
+  SetFileDropWeapon(in);
 
   return true;
 }

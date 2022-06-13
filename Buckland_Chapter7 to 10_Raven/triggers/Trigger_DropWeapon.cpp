@@ -12,11 +12,11 @@
 #define LOG_CREATIONAL_STUFF
 ///////////////////////////////////////////////////////////////////////////////
 
-Trigger_DropWeapon::Trigger_DropWeapon(Raven_Bot* pBot, std::ifstream& datafile) :
+Trigger_DropWeapon::Trigger_DropWeapon(Vector2D posBot, double radiusBot, std::ifstream& datafile) :
 
     Trigger_Respawning<Raven_Bot>(GetValueFromStream<int>(datafile))
 {
-    Read(pBot);
+    //Read(posBot, radiusBot, datafile);
 
     //create the vertex buffer for the rocket shape
     const int NumRocketVerts = 8;
@@ -48,12 +48,14 @@ void Trigger_DropWeapon::Try(Raven_Bot* pBot)
 
 
 
-void Trigger_DropWeapon::Read(Raven_Bot* pBot)
+void Trigger_DropWeapon::Read(Vector2D posBot, double radiusBot, std::ifstream* is)
 {
     int GraphNodeIndex;
 
-    SetPos(Vector2D(pBot->Pos().x, pBot->Pos().y));
-    SetBRadius(pBot->BRadius());
+    *is >> posBot.x >> posBot.y >> radiusBot >> GraphNodeIndex;
+
+    SetPos(Vector2D(posBot.x, posBot.y));
+    SetBRadius(radiusBot);
     SetGraphNodeIndex(GraphNodeIndex);
 
     //create this trigger's region of fluence
