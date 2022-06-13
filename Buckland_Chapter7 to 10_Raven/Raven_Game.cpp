@@ -32,7 +32,7 @@
 #include "triggers/Trigger_WeaponGiver.h"
 
 
-typedef std::map<int, Raven_Weapon*>  WeaponMap;
+typedef std::map<int, Raven_Weapon*>              WeaponMap;
 
 //uncomment to write object creation/deletion to debug console
 #define  LOG_CREATIONAL_STUFF
@@ -45,10 +45,10 @@ Raven_Game::Raven_Game():m_pSelectedBot(NULL),
                          m_bRemoveABot(false),
                          m_pMap(NULL),
                          m_pPathManager(NULL),
-                         m_pGraveMarkers(NULL)
+                         m_pGraveMarkers(NULL),
+                         fileDropWeapon (script->GetString("StartMap"))
 {
   //load in the default map
-    
   LoadMap(script->GetString("StartMap"));
 }
 
@@ -158,6 +158,7 @@ void Raven_Game::Update()
     if ((*curBot)->isSpawning() && bSpawnPossible)
     {
       bSpawnPossible = AttemptToAddBot(*curBot);
+
     }
 
     
@@ -173,48 +174,22 @@ void Raven_Game::Update()
       // Give a spawn to dropped weapons
 
       WeaponMap::iterator it;
-      std::ifstream& oui = m_pMap->GetFileDropWeapon();
-      //Trigger_WeaponGiver::Trigger_WeapenGiver test = new Trigger_WeaponGiver((*curBot), m_pMap->GetFileDropWeapon());
-
+      std::ifstream oui (script->GetString("StartMap").c_str());
       for (it = allWeaponInventory.begin(); it != allWeaponInventory.end(); ++it) {
           Trigger_DropWeapon* test = new Trigger_DropWeapon((*curBot)->Pos(), (*curBot)->BRadius(), oui);
-          //Trigger_WeaponGiver* test2 = new Trigger_WeaponGiver(*m_pMap->GetFileDropWeapon());
-          //curBot est un arbre
           
-          //test->SetEntityType(it->first);
+          test->SetEntityType(it->first);
           
-          //m_pMap->GetTriggerSystem().Register(test);
-#ifdef LOG_CREATIONAL_STUFF
-          //debug_con << "TYPE OF TEST " << test->ID() << "";
-#endif
-          /*wg->SetEntityType(type_of_weapon);
-
-          //add it to the appropriate vectors
-          m_TriggerSystem.Register(wg);
+          m_pMap->GetTriggerSystem().Register(test);
 
           //let the corresponding navgraph node point to this object
-          NavGraph::NodeType& node = m_pNavGraph->GetNode(wg->GraphNodeIndex());
-
-          node.SetExtraInfo(wg);
-
+          //Raven_Map::GraphNode& test2 = m_pMap->GetNavGraph().GetNode(test->GraphNodeIndex());
+          //test2.SetExtraInfo(test);
           //register the entity 
-          EntityMgr->RegisterEntity(wg);*/
-
-
-          //m_pMap->GetTriggerSystem().Register(test);
-          //Raven_Map::GraphNode test2 = m_pMap->GetNavGraph().GetNode(test.GraphNodeIndex());
-          //test2.SetExtraInfo(&test);
-          //register the entity 
-          //EntityMgr->RegisterEntity(&test);
+          //debug_con << "ID " << test->ID() << "";
+          //EntityMgr->RegisterEntity(test); //erreur la dessus
           //m_pMap->GetTriggerSystem().Render();
       }
-
-      //
-      //let the corresponding navgraph node point to this object
-      //
-      //
-
-
 
       //change its status to spawning
       (*curBot)->SetSpawning();
@@ -415,7 +390,7 @@ bool Raven_Game::LoadMap(const std::string& filename)
 {  
   //clear any current bots and projectiles
   Clear();
-  
+
   //out with the old
   delete m_pMap;
   delete m_pGraveMarkers;
@@ -429,12 +404,10 @@ bool Raven_Game::LoadMap(const std::string& filename)
   //make sure the entity manager is reset
   EntityMgr->Reset();
 
-
   //load the new map data
   if (m_pMap->LoadMap(filename))
   { 
     AddBots(script->GetInt("NumBots"));
-  
     return true;
   }
 

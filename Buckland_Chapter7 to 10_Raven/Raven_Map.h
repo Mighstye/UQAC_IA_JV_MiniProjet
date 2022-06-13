@@ -84,9 +84,6 @@ private:
   void AddDoor(std::ifstream& in);
   void AddDoorTrigger(std::ifstream& in);
 
-  // SAVE in FILE FOR DROP WEAPON
-  std::ifstream& fileDropWeapon;
-
   void Clear();
   
 public:
@@ -129,14 +126,7 @@ public:
   double                             GetCellSpaceNeighborhoodRange()const{return m_dCellSpaceNeighborhoodRange;}
 
   TriggerSystem GetTriggerSystem() { return m_TriggerSystem; }
-  
-
-  // GETTERS AND SETTERS FOR fileDropWeapon  
-
-  const std::ifstream& GetFileDropWeapon() { return fileDropWeapon; }
-  void SetFileDropWeapon(std::ifstream& file) { fileDropWeapon = file; }
 };
-
 
 
 #endif

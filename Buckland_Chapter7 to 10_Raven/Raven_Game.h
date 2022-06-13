@@ -80,6 +80,10 @@ private:
   //must be notified so that they can remove any references to that bot from
   //their memory
   void NotifyAllBotsOfRemoval(Raven_Bot* pRemovedBot)const;
+
+
+  // SAVE in FILE FOR DROP WEAPON
+  const std::string& fileDropWeapon;
   
 public:
   
@@ -163,6 +167,9 @@ public:
   
   void  TagRaven_BotsWithinViewRange(BaseGameEntity* pRaven_Bot, double range)
               {TagNeighbors(pRaven_Bot, m_Bots, range);}  
+
+  // GETTERS AND SETTERS FOR fileDropWeapon  
+  const std::string& GetFileDropWeapon() { return fileDropWeapon; }
 };
 
 

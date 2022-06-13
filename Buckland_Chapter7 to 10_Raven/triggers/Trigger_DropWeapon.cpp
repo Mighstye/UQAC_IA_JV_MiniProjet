@@ -16,7 +16,7 @@ Trigger_DropWeapon::Trigger_DropWeapon(Vector2D posBot, double radiusBot, std::i
 
     Trigger_Respawning<Raven_Bot>(GetValueFromStream<int>(datafile))
 {
-    //Read(posBot, radiusBot, datafile);
+    Read(posBot, radiusBot, datafile);
 
     //create the vertex buffer for the rocket shape
     const int NumRocketVerts = 8;
@@ -43,24 +43,6 @@ void Trigger_DropWeapon::Try(Raven_Bot* pBot)
         pBot->GetWeaponSys()->AddWeapon(EntityType());
         Deactivate();
     }
-}
-
-
-
-
-void Trigger_DropWeapon::Read(Vector2D posBot, double radiusBot, std::ifstream* is)
-{
-    int GraphNodeIndex;
-
-    *is >> posBot.x >> posBot.y >> radiusBot >> GraphNodeIndex;
-
-    SetPos(Vector2D(posBot.x, posBot.y));
-    SetBRadius(radiusBot);
-    SetGraphNodeIndex(GraphNodeIndex);
-
-    //create this trigger's region of fluence
-    AddCircularTriggerRegion(Pos(), script->GetDouble("DefaultGiverTriggerRange"));
-    SetRespawnDelay((unsigned int)(script->GetDouble("Weapon_RespawnDelay") * FrameRate));
 }
 
 
@@ -107,10 +89,36 @@ void Trigger_DropWeapon::Render()
 
             gdi->RedPen();
             gdi->ClosedShape(m_vecRLVBTrans);
+            break;
         }
+        default:
+            Vector2D facing(-1, 0);
 
-        break;
+            m_vecRLVBTrans = WorldTransform(m_vecRLVB,
+                Pos(),
+                facing,
+                facing.Perp(),
+                Vector2D(2.5, 2.5));
+
+            gdi->RedPen();
+            gdi->ClosedShape(m_vecRLVBTrans);
+            break;
 
         }//end switch
     }
+}
+
+void Trigger_DropWeapon::Read(Vector2D posBot, double radiusBot, std::ifstream& is)
+{
+    int GraphNodeIndex;
+
+    is >> posBot.x >> posBot.y >> radiusBot >> GraphNodeIndex;
+
+    SetPos(Vector2D(posBot.x, posBot.y));
+    SetBRadius(radiusBot);
+    SetGraphNodeIndex(GraphNodeIndex);
+
+    //create this trigger's region of fluence
+    AddCircularTriggerRegion(Pos(), script->GetDouble("DefaultGiverTriggerRange"));
+    SetRespawnDelay((unsigned int)(script->GetDouble("Weapon_RespawnDelay") * FrameRate));
 }

@@ -298,7 +298,6 @@ bool Raven_Map::LoadMap(const std::string& filename)
   m_PathCosts = CreateAllPairsCostsTable(*m_pNavGraph);
   
   // save the in FIle for drop items
-  SetFileDropWeapon(in);
 
   return true;
 }
