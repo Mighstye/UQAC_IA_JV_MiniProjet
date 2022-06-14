@@ -9,7 +9,7 @@
 
 
 
-class Trigger_DropWeapon : public Trigger_Respawning<Raven_Bot>
+class Trigger_DropWeapon : public Trigger<Raven_Bot>
 {
 private:
 
@@ -20,17 +20,15 @@ private:
 public:
 
 	//this type of trigger is created when reading a map file
-	Trigger_DropWeapon(Vector2D posBot, double radiusBot, std::ifstream& datafile);
-
+	Trigger_DropWeapon(Raven_Bot* bot);
+ 	//~Trigger_DropWeapon() {};
 	//if triggered, this trigger will call the PickupWeapon method of the
 	//bot. PickupWeapon will instantiate a weapon of the appropriate type.
 	void Try(Raven_Bot*);
 
 	//draws a symbol representing the weapon type at the trigger's location
 	void Render();
-
-	void Read(Vector2D posBot, double radiusBot, std::ifstream& is);
-
+	virtual void Update() {}
 };
 
 

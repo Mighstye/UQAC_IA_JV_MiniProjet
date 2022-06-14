@@ -30,7 +30,7 @@
 #include "triggers/TriggerSystem.h"
 #include "triggers/Trigger_DropWeapon.h"
 #include "triggers/Trigger_WeaponGiver.h"
-
+#include "armory/Raven_Weapon.h"
 
 typedef std::map<int, Raven_Weapon*>              WeaponMap;
 
@@ -174,21 +174,16 @@ void Raven_Game::Update()
       // Give a spawn to dropped weapons
 
       WeaponMap::iterator it;
-      std::ifstream oui (script->GetString("StartMap").c_str());
-      for (it = allWeaponInventory.begin(); it != allWeaponInventory.end(); ++it) {
-          Trigger_DropWeapon* test = new Trigger_DropWeapon((*curBot)->Pos(), (*curBot)->BRadius(), oui);
-          
-          test->SetEntityType(it->first);
-          
-          m_pMap->GetTriggerSystem().Register(test);
 
-          //let the corresponding navgraph node point to this object
-          //Raven_Map::GraphNode& test2 = m_pMap->GetNavGraph().GetNode(test->GraphNodeIndex());
-          //test2.SetExtraInfo(test);
-          //register the entity 
-          //debug_con << "ID " << test->ID() << "";
-          //EntityMgr->RegisterEntity(test); //erreur la dessus
-          //m_pMap->GetTriggerSystem().Render();
+      for (it = allWeaponInventory.begin(); it != allWeaponInventory.end(); ++it) {
+          if (!it->second || it->second->NumRoundsRemaining() == 0) {
+              continue;
+          }
+          Trigger_DropWeapon* test = new Trigger_DropWeapon(*curBot);
+          test->SetEntityType(it->first);
+
+          m_pMap->GetTriggerSystem().Register(test);
+          EntityMgr->RegisterEntity(test);
       }
 
       //change its status to spawning

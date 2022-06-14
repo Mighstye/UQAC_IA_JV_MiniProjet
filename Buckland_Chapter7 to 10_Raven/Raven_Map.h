@@ -125,7 +125,7 @@ public:
   int                                GetMaxDimension()const{return Maximum(m_iSizeX, m_iSizeY);}
   double                             GetCellSpaceNeighborhoodRange()const{return m_dCellSpaceNeighborhoodRange;}
 
-  TriggerSystem GetTriggerSystem() { return m_TriggerSystem; }
+  TriggerSystem& GetTriggerSystem() { return m_TriggerSystem; }
 };
 
 

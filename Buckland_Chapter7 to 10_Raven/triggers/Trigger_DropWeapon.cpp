@@ -12,11 +12,16 @@
 #define LOG_CREATIONAL_STUFF
 ///////////////////////////////////////////////////////////////////////////////
 
-Trigger_DropWeapon::Trigger_DropWeapon(Vector2D posBot, double radiusBot, std::ifstream& datafile) :
+Trigger_DropWeapon::Trigger_DropWeapon(Raven_Bot* bot) :
 
-    Trigger_Respawning<Raven_Bot>(GetValueFromStream<int>(datafile))
+    Trigger<Raven_Bot>(GetNextValidID())
 {
-    Read(posBot, radiusBot, datafile);
+    SetPos(bot->Pos());
+    SetBRadius(bot->BRadius());
+    SetGraphNodeIndex(this->ID()); // a verifier
+
+    //create this trigger's region of fluence
+    AddCircularTriggerRegion(Pos(), script->GetDouble("DefaultGiverTriggerRange"));    
 
     //create the vertex buffer for the rocket shape
     const int NumRocketVerts = 8;
@@ -41,7 +46,7 @@ void Trigger_DropWeapon::Try(Raven_Bot* pBot)
     if (this->isActive() && this->isTouchingTrigger(pBot->Pos(), pBot->BRadius()))
     {
         pBot->GetWeaponSys()->AddWeapon(EntityType());
-        Deactivate();
+        SetInactive();
     }
 }
 
@@ -106,19 +111,4 @@ void Trigger_DropWeapon::Render()
 
         }//end switch
     }
-}
-
-void Trigger_DropWeapon::Read(Vector2D posBot, double radiusBot, std::ifstream& is)
-{
-    int GraphNodeIndex;
-
-    is >> posBot.x >> posBot.y >> radiusBot >> GraphNodeIndex;
-
-    SetPos(Vector2D(posBot.x, posBot.y));
-    SetBRadius(radiusBot);
-    SetGraphNodeIndex(GraphNodeIndex);
-
-    //create this trigger's region of fluence
-    AddCircularTriggerRegion(Pos(), script->GetDouble("DefaultGiverTriggerRange"));
-    SetRespawnDelay((unsigned int)(script->GetDouble("Weapon_RespawnDelay") * FrameRate));
 }
