@@ -33,9 +33,9 @@
 
 # Debug file
 /debug
-
+Buckland_Chapter7 to 10_Raven/Release
 # Common File
 /Common
 
 *.vcxproj
-"Buckland_Chapter7 to 10_Raven"/.vs
+Buckland_Chapter7 to 10_Raven/.vs
