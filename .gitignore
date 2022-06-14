@@ -33,20 +33,9 @@
 
 # Debug file
 /debug
-
+Buckland_Chapter7 to 10_Raven/Release
 # Common File
 /Common
 
-Buckland_Chapter7 to 10_Raven/Release/
-Buckland_Chapter7 to 10_Raven/Raven.vcxproj
-Buckland_Chapter7 to 10_Raven/.vs/Raven/v17/.suo
-Buckland_Chapter7 to 10_Raven/.vs/Raven/v17/Browse.VC.db
-Buckland_Chapter7 to 10_Raven/.vs/Raven/v17/Browse.VC.db-shm
-Buckland_Chapter7 to 10_Raven/.vs/Raven/v17/Browse.VC.db-wal
-Buckland_Chapter7 to 10_Raven/.vs/Raven/v17/Browse.VC.opendb
-Buckland_Chapter7 to 10_Raven/.vs/Raven/v17/ipch/AutoPCH/8e929ffcbc202e5f/MAIN.ipch
-Buckland_Chapter7 to 10_Raven/.vs/Raven/v17/ipch/AutoPCH/e28855dd93503b14/RAVEN_BOT.ipch
-Buckland_Chapter7 to 10_Raven/DebugLog.txt
-Buckland_Chapter7 to 10_Raven/Raven.vcxproj
-Buckland_Chapter7 to 10_Raven/DebugLog.txt
-Buckland_Chapter7 to 10_Raven/Raven.vcxproj
+*.vcxproj
+Buckland_Chapter7 to 10_Raven/.vs

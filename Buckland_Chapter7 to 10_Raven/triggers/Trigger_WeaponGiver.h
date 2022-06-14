@@ -14,7 +14,7 @@
 #include "Triggers/Trigger_Respawning.h"
 #include "../Raven_Bot.h"
 #include <iosfwd>
-
+#include "Debug/DebugConsole.h"
 
 
 

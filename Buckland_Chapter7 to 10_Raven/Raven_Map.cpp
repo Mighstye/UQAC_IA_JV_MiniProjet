@@ -11,6 +11,7 @@
 #include "triggers/Trigger_WeaponGiver.h"
 #include "triggers/Trigger_OnButtonSendMsg.h"
 #include "triggers/Trigger_SoundNotify.h"
+#include "triggers/Trigger_DropWeapon.h"
 
 #include "Raven_UserOptions.h"
 
@@ -147,7 +148,7 @@ void Raven_Map::AddHealth_Giver(std::ifstream& in)
 //-----------------------------------------------------------------------------
 void Raven_Map::AddWeapon_Giver(int type_of_weapon, std::ifstream& in)
 {
-  Trigger_WeaponGiver* wg = new Trigger_WeaponGiver(in);
+  Trigger_WeaponGiver* wg = new Trigger_WeaponGiver(in); 
 
   wg->SetEntityType(type_of_weapon);
 
@@ -188,7 +189,7 @@ bool Raven_Map::LoadMap(const std::string& filename)
   m_pNavGraph = new NavGraph(false);
   
   m_pNavGraph->Load(in);
-
+  
 #ifdef LOG_CREATIONAL_STUFF
     debug_con << "NavGraph for " << filename << " loaded okay" << "";
 #endif
@@ -277,6 +278,9 @@ bool Raven_Map::LoadMap(const std::string& filename)
      
        AddWeapon_Giver(type_rocket_launcher, in); break;
 
+   case type_weapons_drop:
+       AddWeapon_Giver(type_rocket_launcher, in); break;
+
     default:
       
       throw std::runtime_error("<Map::Load>: Attempting to load undefined object");
@@ -292,6 +296,8 @@ bool Raven_Map::LoadMap(const std::string& filename)
 
    //calculate the cost lookup table
   m_PathCosts = CreateAllPairsCostsTable(*m_pNavGraph);
+  
+  // save the in FIle for drop items
 
   return true;
 }

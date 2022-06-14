@@ -10,7 +10,12 @@
 #include "Raven_UserOptions.h"
 #include "2D/transformations.h"
 
+#include "Debug/DebugConsole.h"
+#include "triggers/Trigger_DropWeapon.h"
+#include "triggers/Trigger_WeaponGiver.h"
+#include <Game/EntityManager.h>
 
+#define  LOG_CREATIONAL_STUFF
 
 //------------------------- ctor ----------------------------------------------
 //-----------------------------------------------------------------------------
@@ -127,7 +132,6 @@ void  Raven_WeaponSystem::AddWeapon(unsigned int weapon_type)
   case type_rocket_launcher:
 
     w = new RocketLauncher(m_pOwner); break;
-
   }//end switch
   
 
@@ -148,7 +152,6 @@ void  Raven_WeaponSystem::AddWeapon(unsigned int weapon_type)
   }
 }
 
-
 //------------------------- GetWeaponFromInventory -------------------------------
 //
 //  returns a pointer to any matching weapon.
@@ -159,6 +162,11 @@ Raven_Weapon* Raven_WeaponSystem::GetWeaponFromInventory(int weapon_type)
 {
   return m_WeaponMap[weapon_type];
 }
+
+Raven_WeaponSystem::WeaponMap Raven_WeaponSystem::GetAllWeaponFromInventory() {
+    return m_WeaponMap; 
+}
+
 
 //----------------------- ChangeWeapon ----------------------------------------
 void Raven_WeaponSystem::ChangeWeapon(unsigned int type)

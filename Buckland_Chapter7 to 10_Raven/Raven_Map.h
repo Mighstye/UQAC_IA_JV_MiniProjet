@@ -81,7 +81,6 @@ private:
   void AddWall(std::ifstream& in);
   void AddSpawnPoint(std::ifstream& in);
   void AddHealth_Giver(std::ifstream& in);
-  void AddWeapon_Giver(int type_of_weapon, std::ifstream& in);
   void AddDoor(std::ifstream& in);
   void AddDoorTrigger(std::ifstream& in);
 
@@ -111,6 +110,9 @@ public:
   
   void  UpdateTriggerSystem(std::list<Raven_Bot*>& bots);
 
+  void AddWeapon_Giver(int type_of_weapon, std::ifstream& in);
+
+
   const Raven_Map::TriggerSystem::TriggerList&  GetTriggers()const{return m_TriggerSystem.GetTriggers();}
   const std::vector<Wall2D*>&        GetWalls()const{return m_Walls;}
   NavGraph&                          GetNavGraph()const{return *m_pNavGraph;}
@@ -123,8 +125,8 @@ public:
   int                                GetMaxDimension()const{return Maximum(m_iSizeX, m_iSizeY);}
   double                             GetCellSpaceNeighborhoodRange()const{return m_dCellSpaceNeighborhoodRange;}
 
+  TriggerSystem& GetTriggerSystem() { return m_TriggerSystem; }
 };
-
 
 
 #endif

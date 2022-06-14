@@ -25,11 +25,17 @@
 
 #include "goals/Goal_Think.h"
 #include "goals/Raven_Goal_Types.h"
+#include "Debug/DebugConsole.h"
+#include <misc/Stream_Utility_Functions.h>
+#include "triggers/TriggerSystem.h"
+#include "triggers/Trigger_DropWeapon.h"
+#include "triggers/Trigger_WeaponGiver.h"
+#include "armory/Raven_Weapon.h"
 
-
+typedef std::map<int, Raven_Weapon*>              WeaponMap;
 
 //uncomment to write object creation/deletion to debug console
-//#define  LOG_CREATIONAL_STUFF
+#define  LOG_CREATIONAL_STUFF
 
 
 //----------------------------- ctor ------------------------------------------
@@ -39,7 +45,8 @@ Raven_Game::Raven_Game():m_pSelectedBot(NULL),
                          m_bRemoveABot(false),
                          m_pMap(NULL),
                          m_pPathManager(NULL),
-                         m_pGraveMarkers(NULL)
+                         m_pGraveMarkers(NULL),
+                         fileDropWeapon (script->GetString("StartMap"))
 {
   //load in the default map
   LoadMap(script->GetString("StartMap"));
@@ -84,9 +91,6 @@ void Raven_Game::Clear()
   std::list<Raven_Projectile*>::iterator curW = m_Projectiles.begin();
   for (curW; curW != m_Projectiles.end(); ++curW)
   {
-#ifdef LOG_CREATIONAL_STUFF
-    debug_con << "deleting projectile id: " << (*curW)->ID() << "";
-#endif
 
     delete *curW;
   }
@@ -145,7 +149,7 @@ void Raven_Game::Update()
   
   //update the bots
   bool bSpawnPossible = true;
-  
+
   std::list<Raven_Bot*>::iterator curBot = m_Bots.begin();
   for (curBot; curBot != m_Bots.end(); ++curBot)
   {
@@ -154,7 +158,9 @@ void Raven_Game::Update()
     if ((*curBot)->isSpawning() && bSpawnPossible)
     {
       bSpawnPossible = AttemptToAddBot(*curBot);
+
     }
+
     
     //if this bot's status is 'dead' add a grave at its current location 
     //then change its status to 'respawning'
@@ -162,6 +168,23 @@ void Raven_Game::Update()
     {
       //create a grave
       m_pGraveMarkers->AddGrave((*curBot)->Pos());
+
+      // drop weapon on grave
+      WeaponMap allWeaponInventory = (*curBot)->GetWeaponSys()->GetAllWeaponFromInventory();
+      // Give a spawn to dropped weapons
+
+      WeaponMap::iterator it;
+
+      for (it = allWeaponInventory.begin(); it != allWeaponInventory.end(); ++it) {
+          if (!it->second || it->second->NumRoundsRemaining() == 0) {
+              continue;
+          }
+          Trigger_DropWeapon* test = new Trigger_DropWeapon(*curBot);
+          test->SetEntityType(it->first);
+
+          m_pMap->GetTriggerSystem().Register(test);
+          EntityMgr->RegisterEntity(test);
+      }
 
       //change its status to spawning
       (*curBot)->SetSpawning();
@@ -303,10 +326,6 @@ void Raven_Game::AddBolt(Raven_Bot* shooter, Vector2D target)
   Raven_Projectile* rp = new Bolt(shooter, target);
 
   m_Projectiles.push_back(rp);
-  
-  #ifdef LOG_CREATIONAL_STUFF
-  debug_con << "Adding a bolt " << rp->ID() << " at pos " << rp->Pos() << "";
-  #endif
 }
 
 //------------------------------ AddRocket --------------------------------
@@ -315,10 +334,6 @@ void Raven_Game::AddRocket(Raven_Bot* shooter, Vector2D target)
   Raven_Projectile* rp = new Rocket(shooter, target);
 
   m_Projectiles.push_back(rp);
-  
-  #ifdef LOG_CREATIONAL_STUFF
-  debug_con << "Adding a rocket " << rp->ID() << " at pos " << rp->Pos() << "";
-  #endif
 }
 
 //------------------------- AddRailGunSlug -----------------------------------
@@ -327,10 +342,6 @@ void Raven_Game::AddRailGunSlug(Raven_Bot* shooter, Vector2D target)
   Raven_Projectile* rp = new Slug(shooter, target);
 
   m_Projectiles.push_back(rp);
-  
-  #ifdef LOG_CREATIONAL_STUFF
-  debug_con << "Adding a rail gun slug" << rp->ID() << " at pos " << rp->Pos() << "";
-#endif
 }
 
 //------------------------- AddShotGunPellet -----------------------------------
@@ -339,10 +350,6 @@ void Raven_Game::AddShotGunPellet(Raven_Bot* shooter, Vector2D target)
   Raven_Projectile* rp = new Pellet(shooter, target);
 
   m_Projectiles.push_back(rp);
-  
-  #ifdef LOG_CREATIONAL_STUFF
-  debug_con << "Adding a shotgun shell " << rp->ID() << " at pos " << rp->Pos() << "";
-#endif
 }
 
 
@@ -378,7 +385,7 @@ bool Raven_Game::LoadMap(const std::string& filename)
 {  
   //clear any current bots and projectiles
   Clear();
-  
+
   //out with the old
   delete m_pMap;
   delete m_pGraveMarkers;
@@ -392,12 +399,10 @@ bool Raven_Game::LoadMap(const std::string& filename)
   //make sure the entity manager is reset
   EntityMgr->Reset();
 
-
   //load the new map data
   if (m_pMap->LoadMap(filename))
   { 
     AddBots(script->GetInt("NumBots"));
-  
     return true;
   }
 

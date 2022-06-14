@@ -6,7 +6,7 @@
 #include "../constants.h"
 #include "../Raven_ObjectEnumerations.h"
 #include "../Raven_WeaponSystem.h"
-
+#include "Debug/DebugConsole.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -53,7 +53,7 @@ void Trigger_WeaponGiver::Read(std::ifstream& in)
   int GraphNodeIndex;
   
   in >>  x >> y  >> r >> GraphNodeIndex;
-
+  debug_con << "X " << x << "Y " << y << "Radius " << r << "GraphNodeIndex" << GraphNodeIndex << "";
   SetPos(Vector2D(x,y)); 
   SetBRadius(r);
   SetGraphNodeIndex(GraphNodeIndex);
