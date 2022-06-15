@@ -33,7 +33,7 @@ class Raven_Map
 {
 public:
 
-  typedef NavGraphNode<Trigger<Raven_Bot>*>         GraphNode;
+  typedef NavGraphNode<Trigger<Raven_Bot>*>         GraphNode; //Triger<Raven_bot> correspond à l'attribut extra_info.
   typedef SparseGraph<GraphNode, NavGraphEdge>      NavGraph;
   typedef CellSpacePartition<NavGraph::NodeType*>   CellSpace;
 
