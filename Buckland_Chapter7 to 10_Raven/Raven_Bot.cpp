@@ -207,18 +207,18 @@ void Raven_Bot::Update()
 
 	  //this method aims the bot's current weapon at the current target
 	  //and takes a shot if a shot is possible
-	  bool haveShoot = 0;
+	  bool haveShoot = false;;
 
 
 
 	  //sauvegarder les données pour un eventuel apprentissage
 
 
-	  if (m_pTargSys->isTargetPresent()) {
+	 if (m_pTargSys->isTargetPresent()) {
 
 		  if ((GetKeyState(VK_LBUTTON) & 0x8000) != 0)
 		  {
-			  haveShoot = 1;
+			  haveShoot = true;
 		  }
 
 		  m_vecObservation.clear();

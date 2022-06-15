@@ -125,6 +125,9 @@ void Raven_Game::TrainThread() {
 	if (isTraining) {
 		debug_con << "Modele d'apprentissage de tir est appris" << "";
 		m_estEntraine = true;
+		
+		AddBots(1, true);
+
 	
 	}
 
@@ -197,12 +200,6 @@ void Raven_Game::Update()
       //change its status to spawning
       (*curBot)->SetSpawning();
 
-	  //de temps en temps (une fois sur 2) créer un bot apprenant, lorqu'un un bot meurt.
-	  //la fonction RandBool) rend vrai une fois sur 2.
-	  if (m_estEntraine & RandBool()) {
-		  AddBots(1, true);
-	  }
-
     }
 
     //if this bot is alive update it.
@@ -214,7 +211,7 @@ void Raven_Game::Update()
   } 
   if (m_pSelectedBot) {
 	  //on crée un échantillon de 200 observations. Juste assez pour ne pas s'accaparer de la mémoire...
-	  if ((m_TrainingSet.GetInputSet().size() < 200) & ((m_pSelectedBot)->Score() >= 0)) {
+	  if ((m_TrainingSet.GetInputSet().size() < 400) & ((m_pSelectedBot)->Score() >= 0)) {
 
 		  //ajouter une observation au jeu d'entrainement
 		  AddData((m_pSelectedBot)->GetDataShoot(), (m_pSelectedBot)->GetTargetShoot());
@@ -247,7 +244,7 @@ void Raven_Game::Update()
   //Lancer l'apprentissage quand le jeu de données est suffisant
   //la fonction d'apprentissage s'effectue en parallèle : thread
 
-  if ((m_TrainingSet.GetInputSet().size() >= 200) & (!m_LancerApprentissage)) {
+  if ((m_TrainingSet.GetInputSet().size() >= 400) & (!m_LancerApprentissage)) {
 
 
 	  debug_con << "On passe par la" << "";

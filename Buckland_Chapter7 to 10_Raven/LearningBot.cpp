@@ -104,15 +104,15 @@ void LearningBot::Update()
 
 
 			std::vector<double> output = m_ModeleAppris.Update(m_vecObservation);
-			
-			bool canShoot = false;
-			
-			if(output.size() > 0)
-				canShoot = output[0];
 
-			if (canShoot)
-				m_pWeaponSys->TakeAimAndShoot();
+			double canShoot = 0;
 			
+			if (output.size() > 0)
+				canShoot = output[0];
+			
+			debug_con << output[0] << "";
+			if (canShoot >= 0.2)
+				m_pWeaponSys->TakeAimAndShoot();			
 		}
 	}
 }

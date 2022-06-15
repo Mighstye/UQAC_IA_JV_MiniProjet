@@ -51166,7 +51166,7 @@ $LN12@Update:
 ; 207  : 
 ; 208  : 	  //this method aims the bot's current weapon at the current target
 ; 209  : 	  //and takes a shot if a shot is possible
-; 210  : 	  bool haveShoot = 0;
+; 210  : 	  bool haveShoot = false;;
 
 	mov	BYTE PTR _haveShoot$19[ebp], 0
 
@@ -51176,7 +51176,7 @@ $LN12@Update:
 ; 214  : 	  //sauvegarder les données pour un eventuel apprentissage
 ; 215  : 
 ; 216  : 
-; 217  : 	  if (m_pTargSys->isTargetPresent()) {
+; 217  : 	 if (m_pTargSys->isTargetPresent()) {
 
 	mov	ecx, DWORD PTR _this$[ebp]
 	mov	ecx, DWORD PTR [ecx+168]
@@ -51198,7 +51198,7 @@ $LN12@Update:
 	je	SHORT $LN14@Update
 
 ; 220  : 		  {
-; 221  : 			  haveShoot = 1;
+; 221  : 			  haveShoot = true;
 
 	mov	BYTE PTR _haveShoot$19[ebp], 1
 $LN14@Update:
