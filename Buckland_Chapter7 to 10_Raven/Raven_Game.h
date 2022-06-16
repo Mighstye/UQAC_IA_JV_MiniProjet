@@ -25,6 +25,8 @@
 #include "game/EntityFunctionTemplates.h"
 #include "Raven_Bot.h"
 #include "navigation/pathmanager.h"
+#include "CData.h"
+#include "CNeuralNet.h"
 
 
 class BaseGameEntity;
@@ -66,6 +68,8 @@ private:
   //class manages the graves
   GraveMarkers*                    m_pGraveMarkers;
 
+
+
   //this iterates through each trigger, testing each one against each bot
   void  UpdateTriggers();
 
@@ -82,8 +86,23 @@ private:
   void NotifyAllBotsOfRemoval(Raven_Bot* pRemovedBot)const;
 
 
+  CData m_TrainingSet; //jeu d'apprentissage
+
+  bool m_LancerApprentissage; // pour lancer l'apprentissage
+
+  CNeuralNet m_ModeleApprentissage;
+
+
   // SAVE in FILE FOR DROP WEAPON
   const std::string& fileDropWeapon;
+  
+  bool AddData(vector<double>&data, vector<double>& targets);
+
+  void TrainThread();
+
+  bool m_estEntraine;
+
+
   
 public:
   
@@ -97,7 +116,7 @@ public:
   //loads an environment from a file
   bool LoadMap(const std::string& FileName); 
 
-  void AddBots(unsigned int NumBotsToAdd);
+  void AddBots(unsigned int NumBotsToAdd, bool typeBot);
   void AddRocket(Raven_Bot* shooter, Vector2D target);
   void AddRailGunSlug(Raven_Bot* shooter, Vector2D target);
   void AddShotGunPellet(Raven_Bot* shooter, Vector2D target);
@@ -156,6 +175,8 @@ public:
   void        GetPlayerInput()const;
   Raven_Bot*  PossessedBot()const{return m_pSelectedBot;}
   void        ChangeWeaponOfPossessedBot(unsigned int weapon)const;
+
+  CNeuralNet getModeleApprentissage() { return m_ModeleApprentissage; }
 
   
   const Raven_Map* const                   GetMap()const{return m_pMap;}
