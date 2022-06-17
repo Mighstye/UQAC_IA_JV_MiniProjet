@@ -38,6 +38,13 @@ void Raven_TargetingSystem::Update()
               m_pCurrentTarget = *curBot;
           }
       }
+      else {
+          if (dist < ClosestDistSoFar)
+          {
+              ClosestDistSoFar = dist;
+              m_pCurrentTarget = *curBot;
+          }
+      }
     }
   }
 }
