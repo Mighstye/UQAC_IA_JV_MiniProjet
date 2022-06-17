@@ -359,9 +359,8 @@ bool Raven_Bot::HandleMessage(const Telegram& msg)
       SetSquadLeaderID(1);
       return true;
   }
-  case Msg_GetTheStuffOffAlly:
-
-      //GetLocationOfStuff();
+  case Msg_EnnemySquad:
+      SetSquadEnnemyID(2);
       return true;
 
   case Msg_Attack:

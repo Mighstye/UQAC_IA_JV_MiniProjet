@@ -31,11 +31,12 @@ void Raven_TargetingSystem::Update()
     if ((*curBot)->isAlive() && (*curBot != m_pOwner))
     {
       double dist = Vec2DDistanceSq((*curBot)->Pos(), m_pOwner->Pos());
-
-      if (dist < ClosestDistSoFar)
-      {
-        ClosestDistSoFar = dist;
-        m_pCurrentTarget = *curBot;
+      if (((*curBot)->GetSquadLeaderID() != (*curBot)->GetLeaderTeamID()) || ((*curBot)->GetSquadLeaderID() != m_pOwner->GetSquadLeaderID())) {
+          if (dist < ClosestDistSoFar)
+          {
+              ClosestDistSoFar = dist;
+              m_pCurrentTarget = *curBot;
+          }
       }
     }
   }

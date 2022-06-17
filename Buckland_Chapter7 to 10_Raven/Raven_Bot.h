@@ -109,6 +109,7 @@ protected:
   int								 m_leaderBotID = 0;
   int								 m_squadLeaderID = 0;
   int								 m_squadEnnemyID = 0;
+  int								 m_LeaderTeamID = 0;
   Raven_Bot*						 m_leaderBot;
   std::list<Raven_Bot*>				 m_squadLeadTeam;
   std::list<Raven_Bot*>				 m_squadEnnemyTeam;
@@ -177,6 +178,7 @@ public:
   void			SetLeaderID(int leaderID) { m_leaderBotID = leaderID; }
   void			SetSquadLeaderID(int squadAllyID) { m_squadLeaderID = squadAllyID; }
   void			SetSquadEnnemyID(int squadEnnemyID) { m_squadEnnemyID = squadEnnemyID; }
+  void			SetLeaderTeamID(int teamLeaderID) { m_LeaderTeamID = teamLeaderID; }
   void			SetLeaderBot(Raven_Bot* leader) { m_leaderBot = leader; }
   void			SetSquadLeader(std::list<Raven_Bot*>::iterator leaderTeam) { m_squadLeadTeam.push_back(*leaderTeam); }
   void			SetEnnemySquad(std::list<Raven_Bot*>::iterator ennemyTeam) { m_squadEnnemyTeam.push_back(*ennemyTeam); }
@@ -231,6 +233,7 @@ public:
   Raven_SensoryMemory* const         GetSensoryMem()const{return m_pSensoryMem;}
   int								 GetLeaderID() { return m_leaderBotID; }
   int								 GetSquadLeaderID() { return m_squadLeaderID; }
+  int								 GetLeaderTeamID() { return m_LeaderTeamID; }
   int								 GetSquadEnnemyID() { return m_squadEnnemyID; }
   Raven_Bot*						 GetLeaderBot() { return m_leaderBot; }
   std::list<Raven_Bot*>				 GetSquadLeader() { return m_squadLeadTeam; }

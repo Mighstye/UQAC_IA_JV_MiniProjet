@@ -22,7 +22,7 @@ enum message_type
   Msg_GunshotSound,
   Msg_UserHasRemovedBot,
   Msg_ImLeader,
-  Msg_GetTheStuffOffAlly,
+  Msg_EnnemySquad,
   Msg_Attack
 };
 
@@ -67,9 +67,9 @@ inline std::string MessageToString(int msg)
 
       return "Msg_ImLeader";
 
-  case Msg_GetTheStuffOffAlly:
+  case Msg_EnnemySquad:
 
-      return "Msg_GetTheStuffOffAlly";
+      return "Msg_EnnemySquad";
 
   case Msg_Attack:
 

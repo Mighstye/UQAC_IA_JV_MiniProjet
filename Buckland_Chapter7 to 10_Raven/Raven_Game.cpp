@@ -393,6 +393,7 @@ void Raven_Game::CreateAndNotifyAllBotOfLeader() {
         //team 1
         if ((*curBot)->GetLeaderID() == (*curBot)->ID()) {
             m_gleaderBot = (*curBot);
+            m_gleaderBot->SetLeaderTeamID(1);
         }
         else if (countBots < botListDevidedByTwo) {
             m_gSquadLeader.push_back(*curBot);
@@ -404,6 +405,7 @@ void Raven_Game::CreateAndNotifyAllBotOfLeader() {
         countBots++;
     }
     NotifyToFollowLeader();
+    NotifyEnnemyTeam();
 }
 void Raven_Game::NotifyToFollowLeader() {
     std::list<Raven_Bot*>::iterator curBot = m_gSquadLeader.begin();
@@ -427,15 +429,15 @@ void Raven_Game::NotifyToAttackWithLeader(std::list<Raven_Bot*>* LeaderSquad)con
             LeaderSquad);
     }
 }
-void Raven_Game::NotifyToSquadWhereIsTheStuff(std::list<Raven_Bot*>* LeaderSquad)const {
-    std::list<Raven_Bot*>::const_iterator curBot = m_gSquadLeader.begin();
-    for (curBot; curBot != m_Bots.end(); ++curBot)
+void Raven_Game::NotifyEnnemyTeam() {
+    std::list<Raven_Bot*>::iterator curBot = m_gSquadEnnemies.begin();
+    for (curBot; curBot != m_gSquadEnnemies.end(); ++curBot)
     {
         Dispatcher->DispatchMsg(SEND_MSG_IMMEDIATELY,
-            m_pSelectedBot->ID(),
+            SENDER_ID_IRRELEVANT,
             (*curBot)->ID(),
-            Msg_GetTheStuffOffAlly,
-            LeaderSquad);
+            Msg_EnnemySquad,
+            NO_ADDITIONAL_INFO);
     }
 }
 //ajout � chaque update d'un bot des donn�es sur son cmportement
@@ -608,7 +610,6 @@ void Raven_Game::ClickRightMouseButton(POINTS p)
     m_pSelectedBot->TakePossession();
     m_isLeaderSetActive = true;
     CreateAndNotifyAllBotOfLeader();
-
     //clear any current goals
     m_pSelectedBot->GetBrain()->RemoveAllSubgoals();
   }

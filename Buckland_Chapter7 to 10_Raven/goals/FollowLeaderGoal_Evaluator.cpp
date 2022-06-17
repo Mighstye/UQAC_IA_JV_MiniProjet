@@ -17,7 +17,6 @@
 double FollowLeaderGoal_Evaluator::CalculateDesirability(Raven_Bot* pBot)
 {
 	if (pBot->GetLeaderID() != 0 && pBot->GetLeaderID() != pBot->ID()) {
-		debug_con << "OMG ID BOT " << pBot->ID() << " "<< pBot->GetLeaderID() << "";
 		return 100;
 	}
 	else {
@@ -30,7 +29,6 @@ double FollowLeaderGoal_Evaluator::CalculateDesirability(Raven_Bot* pBot)
 void FollowLeaderGoal_Evaluator::SetGoal(Raven_Bot* pBot)
 {
 	pBot->GetBrain()->AddGoal_MoveToPosition(pBot->GetLeaderBot()->Pos());
-	debug_con << "Following leader : " << pBot->GetLeaderBot()->Pos().x << " " << pBot->GetLeaderBot()->Pos().y << "";
 }
 
 //-------------------------- RenderInfo ---------------------------------------

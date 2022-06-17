@@ -96,7 +96,8 @@ private:
   void NotifyAllBotsOfRemoval(Raven_Bot* pRemovedBot)const;
   void NotifyToFollowLeader();
   void NotifyToAttackWithLeader(std::list<Raven_Bot*>* LeaderSquad)const;
-  void NotifyToSquadWhereIsTheStuff(std::list<Raven_Bot*>* LeaderSquad)const;
+  void NotifyEnnemyTeam();
+
   void CreateAndNotifyAllBotOfLeader();
   CData m_TrainingSet; //jeu d'apprentissage
 
