@@ -18,15 +18,8 @@
 #include "GetHealthGoal_Evaluator.h"
 #include "ExploreGoal_Evaluator.h"
 #include "AttackTargetGoal_Evaluator.h"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 #include "RunAwayGoal_Evaluator.h"
-=======
 #include "FollowLeaderGoal_Evaluator.h"
->>>>>>> Stashed changes
-=======
-#include "FollowLeaderGoal_Evaluator.h"
->>>>>>> Stashed changes
 
 
 Goal_Think::Goal_Think(Raven_Bot* pBot):Goal_Composite<Raven_Bot>(pBot, goal_think)
@@ -56,17 +49,10 @@ Goal_Think::Goal_Think(Raven_Bot* pBot):Goal_Composite<Raven_Bot>(pBot, goal_thi
                                                      type_rail_gun));
   m_Evaluators.push_back(new GetWeaponGoal_Evaluator(RocketLauncherBias,
                                                      type_rocket_launcher));
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   m_Evaluators.push_back(new GetWeaponGoal_Evaluator(HandGrenadeBias,
-      type_hand_grenade));
+                                                     type_hand_grenade));
   m_Evaluators.push_back(new RunAwayGoal_Evaluator(RunAwayBias));
-=======
   m_Evaluators.push_back(new FollowLeaderGoal_Evaluator(0));
->>>>>>> Stashed changes
-=======
-  m_Evaluators.push_back(new FollowLeaderGoal_Evaluator(0));
->>>>>>> Stashed changes
 }
 
 //----------------------------- dtor ------------------------------------------

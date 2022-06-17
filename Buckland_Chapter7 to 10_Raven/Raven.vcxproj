@@ -88,7 +88,7 @@
       <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
       <AdditionalOptions> /Zm200 </AdditionalOptions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <AdditionalIncludeDirectories>../Common</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common</AdditionalIncludeDirectories>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -133,7 +133,7 @@
       <ProgramDataBaseFileName>.\Raven___Win32_boundschecker\</ProgramDataBaseFileName>
       <AdditionalOptions> /Zm200 </AdditionalOptions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <AdditionalIncludeDirectories>../Common</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common</AdditionalIncludeDirectories>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -175,7 +175,7 @@
       <ObjectFileName>.\Release\</ObjectFileName>
       <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
       <AdditionalOptions> /Zm200 </AdditionalOptions>
-      <AdditionalIncludeDirectories>../Common</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\auban\Desktop\UQAC\125 - Intelligence Artificielle\Projets\UQAC_IA_JV_MiniProjet\Common</AdditionalIncludeDirectories>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -350,6 +350,7 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='boundschecker|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="goals\FollowLeaderGoal_Evaluator.cpp" />
     <ClCompile Include="goals\GetHealthGoal_Evaluator.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='boundschecker|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
@@ -600,6 +601,7 @@
     <ClInclude Include="constants.h" />
     <ClInclude Include="goals\AttackTargetGoal_Evaluator.h" />
     <ClInclude Include="goals\ExploreGoal_Evaluator.h" />
+    <ClInclude Include="goals\FollowLeaderGoal_Evaluator.h" />
     <ClInclude Include="goals\GetHealthGoal_Evaluator.h" />
     <ClInclude Include="goals\GetWeaponGoal_Evaluator.h" />
     <ClInclude Include="goals\Goal_AdjustRange.h" />

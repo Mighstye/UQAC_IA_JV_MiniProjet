@@ -292,6 +292,9 @@
     <ClCompile Include="armory\Weapon_HandGrenade.cpp">
       <Filter>Game\weapons &amp; projectiles\weapons</Filter>
     </ClCompile>
+    <ClCompile Include="goals\FollowLeaderGoal_Evaluator.cpp">
+      <Filter>AI\goals\goal evaluation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="armory\Raven_Weapon.h">
@@ -653,6 +656,9 @@
     </ClInclude>
     <ClInclude Include="armory\Weapon_HandGrenade.h">
       <Filter>Game\weapons &amp; projectiles\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="goals\FollowLeaderGoal_Evaluator.h">
+      <Filter>AI\goals\goal evaluation</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
