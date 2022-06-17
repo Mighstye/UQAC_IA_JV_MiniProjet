@@ -94,10 +94,10 @@ private:
   //must be notified so that they can remove any references to that bot from
   //their memory
   void NotifyAllBotsOfRemoval(Raven_Bot* pRemovedBot)const;
-  void NotifyToFollowLeader(Raven_Bot* Leader);
+  void NotifyToFollowLeader();
   void NotifyToAttackWithLeader(std::list<Raven_Bot*>* LeaderSquad)const;
   void NotifyToSquadWhereIsTheStuff(std::list<Raven_Bot*>* LeaderSquad)const;
-
+  void CreateAndNotifyAllBotOfLeader();
   CData m_TrainingSet; //jeu d'apprentissage
 
   bool m_LancerApprentissage; // pour lancer l'apprentissage

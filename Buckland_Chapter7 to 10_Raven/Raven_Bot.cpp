@@ -354,9 +354,9 @@ bool Raven_Bot::HandleMessage(const Telegram& msg)
   case Msg_ImLeader:
   {
       Raven_Bot* botLeader = (Raven_Bot*)msg.ExtraInfo;
-      //debug_con << "ID in squad : " << botLeader->ID() << "";
-      //if (msg.Receiver != GetLeaderID()) GetBrain()->AddGoal_MoveToPosition(botLeader->Pos());
-      GetBrain()->RemoveAllSubgoals();
+      SetLeaderID(botLeader->ID());
+      SetLeaderBot(botLeader);
+      SetSquadLeaderID(1);
       return true;
   }
   case Msg_GetTheStuffOffAlly:
@@ -592,8 +592,19 @@ void Raven_Bot::Render()
   gdi->ClosedShape(m_vecBotVBTrans);
   
   //draw the head
-  gdi->BrownBrush();
-  gdi->Circle(Pos(), 6.0 * Scale().x);
+  if (m_squadEnnemyID != 0) {
+      gdi->RedBrush();
+      gdi->Circle(Pos(), 6.0 * Scale().x);
+  }
+  else if (m_squadLeaderID != 0) {
+      gdi->BlueBrush();
+      gdi->Circle(Pos(), 6.0 * Scale().x);
+  }
+  else {
+      gdi->BrownBrush();
+      gdi->Circle(Pos(), 6.0 * Scale().x);
+  }
+
 
 
   //render the bot's weapon

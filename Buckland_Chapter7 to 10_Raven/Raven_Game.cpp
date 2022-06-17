@@ -185,29 +185,9 @@ void Raven_Game::Update()
   bool bSpawnPossible = true;
 
   std::list<Raven_Bot*>::iterator curBot = m_Bots.begin();
-  int countBots = 0;
 
   for (curBot; curBot != m_Bots.end(); ++curBot)
   {
-      if (m_isLeaderSetActive) {
-
-          int botListDevidedByTwo = m_Bots.size() / 2;
-          //team 1
-          if ((*curBot)->GetLeaderID() == (*curBot)->ID()) {
-              m_gleaderBot = (*curBot);
-          }
-          if (countBots < botListDevidedByTwo) {
-              m_gSquadLeader.push_back(*curBot);
-          }
-          else {
-              //team 2
-              m_gSquadEnnemies.push_back(*curBot);
-          }
-          //debug_con << "Nombre personnes squad 1 : " << m_gSquadLeader.size() << "";
-          //debug_con << "Nombre personnes squad 2 : " << m_gSquadEnnemies.size() << "";
-          countBots++;
-          //debug_con << "Leader ID : " << m_pSelectedBot->GetLeaderID() << "";
-      }
     //if this bot's status is 'respawning' attempt to resurrect it from
     //an unoccupied spawn point
     if ((*curBot)->isSpawning() && bSpawnPossible)
@@ -253,10 +233,7 @@ void Raven_Game::Update()
 
 	}  
   } 
-  NotifyToFollowLeader(m_gleaderBot);
-  // clearing squads lists
-  m_gSquadLeader.clear();
-  m_gSquadEnnemies.clear();
+
   if (m_pSelectedBot) {
 	  //on cr�e un �chantillon de 200 observations. Juste assez pour ne pas s'accaparer de la m�moire...
 	  if ((m_TrainingSet.GetInputSet().size() < 400) & ((m_pSelectedBot)->Score() >= 0)) {
@@ -403,7 +380,32 @@ void Raven_Game::NotifyAllBotsOfRemoval(Raven_Bot* pRemovedBot)const
 
     }
 }
-void Raven_Game::NotifyToFollowLeader(Raven_Bot* leaderBot) {
+
+void Raven_Game::CreateAndNotifyAllBotOfLeader() {
+    int countBots = 0;
+    int botListDevidedByTwo = m_Bots.size() / 2;
+    std::list<Raven_Bot*>::iterator curBot = m_Bots.begin();
+    // clearing squads lists
+    m_gSquadLeader.clear();
+    m_gSquadEnnemies.clear();
+    for (curBot; curBot != m_Bots.end(); ++curBot)
+    {
+        //team 1
+        if ((*curBot)->GetLeaderID() == (*curBot)->ID()) {
+            m_gleaderBot = (*curBot);
+        }
+        else if (countBots < botListDevidedByTwo) {
+            m_gSquadLeader.push_back(*curBot);
+        }
+        else { // attention au leader dans la squad ennemie
+            //team 2
+            m_gSquadEnnemies.push_back(*curBot);
+        }
+        countBots++;
+    }
+    NotifyToFollowLeader();
+}
+void Raven_Game::NotifyToFollowLeader() {
     std::list<Raven_Bot*>::iterator curBot = m_gSquadLeader.begin();
     for (curBot; curBot != m_gSquadLeader.end(); ++curBot)
     {
@@ -411,7 +413,7 @@ void Raven_Game::NotifyToFollowLeader(Raven_Bot* leaderBot) {
             m_pSelectedBot->ID(),
             (*curBot)->ID(),
             Msg_ImLeader,
-            leaderBot);
+            m_gleaderBot);
     }
 }
 void Raven_Game::NotifyToAttackWithLeader(std::list<Raven_Bot*>* LeaderSquad)const {
@@ -605,6 +607,8 @@ void Raven_Game::ClickRightMouseButton(POINTS p)
   {
     m_pSelectedBot->TakePossession();
     m_isLeaderSetActive = true;
+    CreateAndNotifyAllBotOfLeader();
+
     //clear any current goals
     m_pSelectedBot->GetBrain()->RemoveAllSubgoals();
   }

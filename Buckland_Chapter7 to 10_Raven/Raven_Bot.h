@@ -106,8 +106,10 @@ protected:
   bool                               m_bPossessed;
 
   // setting up the leader ID when posseded
-  int								 m_leaderBotID;
-  Raven_Bot* m_leaderBot;
+  int								 m_leaderBotID = 0;
+  int								 m_squadLeaderID = 0;
+  int								 m_squadEnnemyID = 0;
+  Raven_Bot*						 m_leaderBot;
   std::list<Raven_Bot*>				 m_squadLeadTeam;
   std::list<Raven_Bot*>				 m_squadEnnemyTeam;
 
@@ -173,6 +175,8 @@ public:
   void          SetAlive(){m_Status = alive;}
 
   void			SetLeaderID(int leaderID) { m_leaderBotID = leaderID; }
+  void			SetSquadLeaderID(int squadAllyID) { m_squadLeaderID = squadAllyID; }
+  void			SetSquadEnnemyID(int squadEnnemyID) { m_squadEnnemyID = squadEnnemyID; }
   void			SetLeaderBot(Raven_Bot* leader) { m_leaderBot = leader; }
   void			SetSquadLeader(std::list<Raven_Bot*>::iterator leaderTeam) { m_squadLeadTeam.push_back(*leaderTeam); }
   void			SetEnnemySquad(std::list<Raven_Bot*>::iterator ennemyTeam) { m_squadEnnemyTeam.push_back(*ennemyTeam); }
@@ -226,6 +230,8 @@ public:
   Raven_WeaponSystem* const          GetWeaponSys()const{return m_pWeaponSys;}
   Raven_SensoryMemory* const         GetSensoryMem()const{return m_pSensoryMem;}
   int								 GetLeaderID() { return m_leaderBotID; }
+  int								 GetSquadLeaderID() { return m_squadLeaderID; }
+  int								 GetSquadEnnemyID() { return m_squadEnnemyID; }
   Raven_Bot*						 GetLeaderBot() { return m_leaderBot; }
   std::list<Raven_Bot*>				 GetSquadLeader() { return m_squadLeadTeam; }
   std::list<Raven_Bot*>				 GetEnnemySquad() { return m_squadEnnemyTeam; }

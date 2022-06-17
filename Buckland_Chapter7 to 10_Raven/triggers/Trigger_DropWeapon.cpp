@@ -18,7 +18,7 @@ Trigger_DropWeapon::Trigger_DropWeapon(Raven_Bot* bot) :
 {
     SetPos(bot->Pos());
     SetBRadius(bot->BRadius());
-    SetGraphNodeIndex(332); // a verifier
+    SetGraphNodeIndex(332); // evite les crash mais pas correct
 
     //create this trigger's region of fluence
     AddCircularTriggerRegion(Pos(), script->GetDouble("DefaultGiverTriggerRange"));    
