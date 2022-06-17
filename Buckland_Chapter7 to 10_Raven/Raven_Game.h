@@ -50,6 +50,16 @@ private:
   //bot
   Raven_Bot*                       m_pSelectedBot;
   
+  // Squad manager
+// set the leader
+  bool m_isLeaderSetActive;
+  //leader
+  Raven_Bot* m_gleaderBot;
+  // team 1
+  std::list<Raven_Bot*> m_gSquadLeader;
+  //team 2
+  std::list<Raven_Bot*> m_gSquadEnnemies;
+
   //this list contains any active projectiles (slugs, rockets,
   //shotgun pellets, etc)
   std::list<Raven_Projectile*>     m_Projectiles;
@@ -84,17 +94,15 @@ private:
   //must be notified so that they can remove any references to that bot from
   //their memory
   void NotifyAllBotsOfRemoval(Raven_Bot* pRemovedBot)const;
-
+  void NotifyToFollowLeader(Raven_Bot* Leader);
+  void NotifyToAttackWithLeader(std::list<Raven_Bot*>* LeaderSquad)const;
+  void NotifyToSquadWhereIsTheStuff(std::list<Raven_Bot*>* LeaderSquad)const;
 
   CData m_TrainingSet; //jeu d'apprentissage
 
   bool m_LancerApprentissage; // pour lancer l'apprentissage
 
   CNeuralNet m_ModeleApprentissage;
-
-
-  // SAVE in FILE FOR DROP WEAPON
-  const std::string& fileDropWeapon;
   
   bool AddData(vector<double>&data, vector<double>& targets);
 
@@ -184,13 +192,11 @@ public:
   const std::list<Raven_Bot*>&             GetAllBots()const{return m_Bots;}
   PathManager<Raven_PathPlanner>* const    GetPathManager(){return m_pPathManager;}
   int                                      GetNumBots()const{return m_Bots.size();}
-
+  std::list<Raven_Bot*>                    GetSquadLeaderTeam()const { return m_gSquadLeader; };
+  std::list<Raven_Bot*>                    GetSquadEnnemyTeam()const { return m_gSquadEnnemies; };
   
   void  TagRaven_BotsWithinViewRange(BaseGameEntity* pRaven_Bot, double range)
               {TagNeighbors(pRaven_Bot, m_Bots, range);}  
-
-  // GETTERS AND SETTERS FOR fileDropWeapon  
-  const std::string& GetFileDropWeapon() { return fileDropWeapon; }
 };
 
 

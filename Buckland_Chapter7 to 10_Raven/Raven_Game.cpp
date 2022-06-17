@@ -53,7 +53,7 @@ Raven_Game::Raven_Game():m_pSelectedBot(NULL),
                          m_pMap(NULL),
                          m_pPathManager(NULL),
                          m_pGraveMarkers(NULL),
-                         fileDropWeapon (script->GetString("StartMap"))
+                         m_isLeaderSetActive(false)
 {
   //load in the default map
   LoadMap(script->GetString("StartMap"));
@@ -184,8 +184,30 @@ void Raven_Game::Update()
   bool bSpawnPossible = true;
 
   std::list<Raven_Bot*>::iterator curBot = m_Bots.begin();
+  int countBots = 0;
+
   for (curBot; curBot != m_Bots.end(); ++curBot)
   {
+      if (m_isLeaderSetActive) {
+
+          int botListDevidedByTwo = m_Bots.size() / 2;
+          //team 1
+          if ((*curBot)->GetLeaderID() == (*curBot)->ID()) {
+              m_gleaderBot = (*curBot);
+              continue;
+          }
+          if (countBots < botListDevidedByTwo) {
+              m_gSquadLeader.push_back(*curBot);
+          }
+          else {
+              //team 2
+              m_gSquadEnnemies.push_back(*curBot);
+          }
+          //debug_con << "Nombre personnes squad 1 : " << m_gSquadLeader.size() << "";
+          //debug_con << "Nombre personnes squad 2 : " << m_gSquadEnnemies.size() << "";
+          countBots++;
+          //debug_con << "Leader ID : " << m_pSelectedBot->GetLeaderID() << "";
+      }
     //if this bot's status is 'respawning' attempt to resurrect it from
     //an unoccupied spawn point
     if ((*curBot)->isSpawning() && bSpawnPossible)
@@ -231,13 +253,17 @@ void Raven_Game::Update()
 
 	}  
   } 
+  NotifyToFollowLeader(m_gleaderBot);
+  // clearing squads lists
+  m_gSquadLeader.clear();
+  m_gSquadEnnemies.clear();
   if (m_pSelectedBot) {
 	  //on cr�e un �chantillon de 200 observations. Juste assez pour ne pas s'accaparer de la m�moire...
 	  if ((m_TrainingSet.GetInputSet().size() < 400) & ((m_pSelectedBot)->Score() >= 0)) {
 
 		  //ajouter une observation au jeu d'entrainement
 		  AddData((m_pSelectedBot)->GetDataShoot(), (m_pSelectedBot)->GetTargetShoot());
-		  debug_con << "la taille du training set" << m_TrainingSet.GetInputSet().size() << "";
+		  //debug_con << "la taille du training set" << m_TrainingSet.GetInputSet().size() << "";
 	  }
   }
   
@@ -377,7 +403,39 @@ void Raven_Game::NotifyAllBotsOfRemoval(Raven_Bot* pRemovedBot)const
 
     }
 }
-
+void Raven_Game::NotifyToFollowLeader(Raven_Bot* leaderBot) {
+    std::list<Raven_Bot*>::iterator curBot = m_gSquadLeader.begin();
+    for (curBot; curBot != m_gSquadLeader.end(); ++curBot)
+    {
+        Dispatcher->DispatchMsg(SEND_MSG_IMMEDIATELY,
+            m_pSelectedBot->ID(),
+            (*curBot)->ID(),
+            Msg_ImLeader,
+            leaderBot);
+    }
+}
+void Raven_Game::NotifyToAttackWithLeader(std::list<Raven_Bot*>* LeaderSquad)const {
+    std::list<Raven_Bot*>::const_iterator curBot = m_gSquadLeader.begin();
+    for (curBot; curBot != m_Bots.end(); ++curBot)
+    {
+        Dispatcher->DispatchMsg(SEND_MSG_IMMEDIATELY,
+            m_pSelectedBot->ID(),
+            (*curBot)->ID(),
+            Msg_Attack,
+            LeaderSquad);
+    }
+}
+void Raven_Game::NotifyToSquadWhereIsTheStuff(std::list<Raven_Bot*>* LeaderSquad)const {
+    std::list<Raven_Bot*>::const_iterator curBot = m_gSquadLeader.begin();
+    for (curBot; curBot != m_Bots.end(); ++curBot)
+    {
+        Dispatcher->DispatchMsg(SEND_MSG_IMMEDIATELY,
+            m_pSelectedBot->ID(),
+            (*curBot)->ID(),
+            Msg_GetTheStuffOffAlly,
+            LeaderSquad);
+    }
+}
 //ajout � chaque update d'un bot des donn�es sur son cmportement
 bool Raven_Game::AddData(vector<double>& data, vector<double>& targets)
 {
@@ -488,7 +546,7 @@ bool Raven_Game::LoadMap(const std::string& filename)
   //load the new map data
   if (m_pMap->LoadMap(filename))
   { 
-    AddBots(script->GetInt("NumBots"));
+    AddBots(script->GetInt("NumBots"), false);
     return true;
   }
 
@@ -538,7 +596,7 @@ void Raven_Game::ClickRightMouseButton(POINTS p)
   if (pBot && pBot == m_pSelectedBot)
   {
     m_pSelectedBot->TakePossession();
-
+    m_isLeaderSetActive = true;
     //clear any current goals
     m_pSelectedBot->GetBrain()->RemoveAllSubgoals();
   }
@@ -560,6 +618,9 @@ void Raven_Game::ClickRightMouseButton(POINTS p)
 
       m_pSelectedBot->GetBrain()->AddGoal_MoveToPosition(POINTStoVector(p));
     }
+  }
+  else {
+      m_isLeaderSetActive = false;
   }
 }
 

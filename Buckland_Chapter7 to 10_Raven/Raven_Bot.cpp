@@ -351,7 +351,24 @@ bool Raven_Bot::HandleMessage(const Telegram& msg)
 
       return true;
     }
+  case Msg_ImLeader:
+  {
+      Raven_Bot* botLeader = (Raven_Bot*)msg.ExtraInfo;
+      //debug_con << "ID in squad : " << botLeader->ID() << "";
+      //if (msg.Receiver != GetLeaderID()) GetBrain()->AddGoal_MoveToPosition(botLeader->Pos());
+      GetBrain()->RemoveAllSubgoals();
+      return true;
+  }
+  case Msg_GetTheStuffOffAlly:
 
+      //GetLocationOfStuff();
+      return true;
+
+  case Msg_Attack:
+
+      //DontShootLeader();
+      //ShootWithLeader();
+      return true;
 
   default: return false;
   }
@@ -431,6 +448,7 @@ void Raven_Bot::TakePossession()
     m_bPossessed = true;
 
     debug_con << "Player Possesses bot " << this->ID() << "";
+    SetLeaderID(this->ID());
   }
 }
 //------------------------------- Exorcise ------------------------------------
