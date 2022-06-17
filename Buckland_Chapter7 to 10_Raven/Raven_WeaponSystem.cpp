@@ -17,6 +17,8 @@
 
 #define  LOG_CREATIONAL_STUFF
 
+Raven_Bot* lastBot;
+
 //------------------------- ctor ----------------------------------------------
 //-----------------------------------------------------------------------------
 Raven_WeaponSystem::Raven_WeaponSystem(Raven_Bot* owner,
@@ -266,20 +268,44 @@ void Raven_WeaponSystem::AddNoiseToAim(Vector2D& AimingPos)const
 //-----------------------------------------------------------------------------
 Vector2D Raven_WeaponSystem::PredictFuturePositionOfTarget()const
 {
-  double MaxSpeed = GetCurrentWeapon()->GetMaxProjectileSpeed();
-  
-  //if the target is ahead and facing the agent shoot at its current pos
-  Vector2D ToEnemy = m_pOwner->GetTargetBot()->Pos() - m_pOwner->Pos();
- 
-  //the lookahead time is proportional to the distance between the enemy
-  //and the pursuer; and is inversely proportional to the sum of the
-  //agent's velocities
-  double LookAheadTime = ToEnemy.Length() / 
-                        (MaxSpeed + m_pOwner->GetTargetBot()->MaxSpeed());
-  
-  //return the predicted future position of the enemy
-  return m_pOwner->GetTargetBot()->Pos() + 
-         m_pOwner->GetTargetBot()->Velocity() * LookAheadTime;
+    /*double MaxSpeed = GetCurrentWeapon()->GetMaxProjectileSpeed();
+
+    //if the target is ahead and facing the agent shoot at its current pos
+    Vector2D ToEnemy = m_pOwner->GetTargetBot()->Pos() - m_pOwner->Pos();
+
+    //the lookahead time is proportional to the distance between the enemy
+    //and the pursuer; and is inversely proportional to the sum of the
+    //agent's velocities
+    double LookAheadTime = ToEnemy.Length() /
+                          (MaxSpeed + m_pOwner->GetTargetBot()->MaxSpeed());
+
+    //return the predicted future position of the enemy
+    return m_pOwner->GetTargetBot()->Pos() +
+           m_pOwner->GetTargetBot()->Velocity() * LookAheadTime;
+    */
+    double MaxProjectileSpeed = GetCurrentWeapon()->GetMaxProjectileSpeed();
+    double MaxBotSpeed = m_pOwner->GetTargetBot()->MaxSpeed();
+    Vector2D BotVelocity = m_pOwner->GetTargetBot()->Velocity();
+    double distanceToEnnemy = (m_pOwner->GetTargetBot()->Pos() - m_pOwner->Pos()).Length();
+
+    Vector2D aimPos;
+
+    if (lastBot == m_pOwner->GetTargetBot()) {
+        aimPos = Vector2D(((lastBot->Pos().y + m_pOwner->GetTargetBot()->Pos().y) / 2),
+            ((lastBot->Pos().x + m_pOwner->GetTargetBot()->Pos().x) / 2));
+        lastBot = m_pOwner->GetTargetBot();
+        return aimPos;
+    }
+    else {
+        if (MaxProjectileSpeed > BotVelocity.Length()) {
+            aimPos = m_pOwner->GetTargetBot()->Pos();
+        }
+        else {
+            aimPos = m_pOwner->GetTargetBot()->Pos() + BotVelocity;
+        }
+        lastBot = m_pOwner->GetTargetBot();
+        return aimPos;
+    }
 }
 
 
