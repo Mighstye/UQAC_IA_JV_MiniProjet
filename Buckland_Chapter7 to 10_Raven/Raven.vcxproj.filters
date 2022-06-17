@@ -2,80 +2,80 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Game">
-      <UniqueIdentifier>{aa78365d-3f99-452a-8ad3-842524e037c2}</UniqueIdentifier>
+      <UniqueIdentifier>{47dd6559-264e-451b-8751-48e2f5f6dd84}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
     </Filter>
     <Filter Include="Game\weapons &amp; projectiles">
-      <UniqueIdentifier>{4870429e-4c8d-4a1c-8a0c-b6134f5c2850}</UniqueIdentifier>
+      <UniqueIdentifier>{57be99af-2bf4-41a5-be8d-23260c745609}</UniqueIdentifier>
     </Filter>
     <Filter Include="Game\weapons &amp; projectiles\weapons">
-      <UniqueIdentifier>{85cbb970-a243-41c3-b2df-334f3a31ea19}</UniqueIdentifier>
+      <UniqueIdentifier>{4011373c-05a3-40f9-acda-582b2f121131}</UniqueIdentifier>
     </Filter>
     <Filter Include="Game\weapons &amp; projectiles\projectiles">
-      <UniqueIdentifier>{1cc0f3c7-7979-4e83-a568-8b92e770ca1a}</UniqueIdentifier>
+      <UniqueIdentifier>{e550936f-bf1a-4f4f-bfbb-50a476660a40}</UniqueIdentifier>
     </Filter>
     <Filter Include="Game\Base entity classes">
-      <UniqueIdentifier>{8a950c50-2385-420a-8b4e-e1faf64b1b6a}</UniqueIdentifier>
+      <UniqueIdentifier>{aead0029-7d1a-4cac-8a57-87b637d04194}</UniqueIdentifier>
     </Filter>
     <Filter Include="Game\Script related">
-      <UniqueIdentifier>{e0edb95f-f85f-4e46-a0c3-97841c524880}</UniqueIdentifier>
+      <UniqueIdentifier>{409a340d-e235-42bd-9732-b20d9ec2f366}</UniqueIdentifier>
     </Filter>
     <Filter Include="Game\Script related\general">
-      <UniqueIdentifier>{f7d118d6-c4b8-4244-93f5-3024c7e8ec1d}</UniqueIdentifier>
+      <UniqueIdentifier>{d9abb7b0-e427-401e-a955-ecd3cee7de42}</UniqueIdentifier>
     </Filter>
     <Filter Include="Game\Script related\lua headers">
-      <UniqueIdentifier>{086e0422-72e7-4d4d-82d1-4e3f13294456}</UniqueIdentifier>
+      <UniqueIdentifier>{9d3e588e-e243-44a4-b05c-8d642beed176}</UniqueIdentifier>
     </Filter>
     <Filter Include="Game\misc">
-      <UniqueIdentifier>{a15745fa-7752-4d64-b8d4-708b660ff604}</UniqueIdentifier>
+      <UniqueIdentifier>{484597e9-44ab-42b4-881b-c1bae542171c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resource Files">
-      <UniqueIdentifier>{022b210f-58f9-453c-ad07-af12454a4e31}</UniqueIdentifier>
+      <UniqueIdentifier>{56b36131-ed23-484f-8c06-f09e6a855143}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resource Files\maps">
-      <UniqueIdentifier>{5ce789b6-d284-4402-8a2a-1002d6eb8bfa}</UniqueIdentifier>
+      <UniqueIdentifier>{5f286400-a2a4-4e66-9984-50cde81bb743}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI">
-      <UniqueIdentifier>{60b36345-7cda-4f0d-9ab0-fe86782df3d4}</UniqueIdentifier>
+      <UniqueIdentifier>{2db1d2ad-ca70-40fa-a7a4-2612236eef0f}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\goals">
-      <UniqueIdentifier>{e35e65a2-51c2-4224-86e0-34d5c13eb273}</UniqueIdentifier>
+      <UniqueIdentifier>{b805ab5f-a12a-47de-ab51-3d07028d3e1e}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\goals\composite">
-      <UniqueIdentifier>{177873b3-647e-4cd8-ad58-b6257ce22d4d}</UniqueIdentifier>
+      <UniqueIdentifier>{421d6c8c-5fb6-4b33-9d76-9c2df2a45a1a}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\goals\goal evaluation">
-      <UniqueIdentifier>{6fb92c7b-79ed-492f-ad45-09e0cb2403a5}</UniqueIdentifier>
+      <UniqueIdentifier>{f1915738-9242-47f7-9bf4-002158e6fa85}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\goals\atomic">
-      <UniqueIdentifier>{45e4f65f-a0dc-4e42-8b73-33424c8f42a3}</UniqueIdentifier>
+      <UniqueIdentifier>{853ee41d-0da7-4fd1-8d6c-9208f1e83c8c}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\fuzzy logic">
-      <UniqueIdentifier>{5eba35b1-ccb2-4075-975f-50b232fcbbbc}</UniqueIdentifier>
+      <UniqueIdentifier>{a4402bf5-ca62-4588-a1bf-a58a8348f6a6}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\fuzzy logic\fuzzy set types">
-      <UniqueIdentifier>{dd42cbbc-f03f-4347-97d2-79c50f58ef7a}</UniqueIdentifier>
+      <UniqueIdentifier>{9c49ad38-c4a6-4473-a057-e593df597a28}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\Movement &amp; Navigation">
-      <UniqueIdentifier>{3c3d9b79-750d-47ab-bfcf-887d5d09ceae}</UniqueIdentifier>
+      <UniqueIdentifier>{1476cf6a-908a-44b5-8769-7071852e2672}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\Messaging">
-      <UniqueIdentifier>{5f23f0e5-ff15-44be-8387-cd1bc71b42c4}</UniqueIdentifier>
+      <UniqueIdentifier>{fa4edac1-2010-4ba6-aaa0-6cbd1edbb00e}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\Sensory Memory">
-      <UniqueIdentifier>{e2e27c2f-4fad-4762-9e0f-a498b6b1a92e}</UniqueIdentifier>
+      <UniqueIdentifier>{d5b4c5eb-7693-4e0b-8e6f-89264cd9f616}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\Triggers">
-      <UniqueIdentifier>{049a6dd0-c55c-49ef-866f-44751e309f5b}</UniqueIdentifier>
+      <UniqueIdentifier>{c40abd06-d80f-438d-94ab-866ce3e358fb}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\Weapon Handling">
-      <UniqueIdentifier>{63ba407a-9b5f-47f7-8b03-344c48f12378}</UniqueIdentifier>
+      <UniqueIdentifier>{25803335-d850-47c6-82d7-66e8e65cc7b0}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI\Target Selection">
-      <UniqueIdentifier>{670ef8ea-67a8-4b45-af40-de5987f2916d}</UniqueIdentifier>
+      <UniqueIdentifier>{f569bc37-9587-483a-a5d3-6a72cbfcd6a2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common">
-      <UniqueIdentifier>{993b8ec9-39bd-44ab-af2c-d23de1cc3139}</UniqueIdentifier>
+      <UniqueIdentifier>{108a043e-18e5-49ea-ab7e-3d0cba828416}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -271,9 +271,7 @@
     <ClCompile Include="triggers\Trigger_DropWeapon.cpp">
       <Filter>AI\Triggers</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Raven_Bot.h">
+    <ClCompile Include="CData.cpp">
       <Filter>Game</Filter>
     </ClCompile>
     <ClCompile Include="CNeuralNet.cpp">
@@ -622,6 +620,15 @@
     </ClInclude>
     <ClInclude Include="triggers\Trigger_DropWeapon.h">
       <Filter>AI\Triggers</Filter>
+    </ClInclude>
+    <ClInclude Include="CData.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="CNeuralNet.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="LearningBot.h">
+      <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

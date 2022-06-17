@@ -488,7 +488,7 @@ bool Raven_Game::LoadMap(const std::string& filename)
   //load the new map data
   if (m_pMap->LoadMap(filename))
   { 
-    AddBots(script->GetInt("NumBots"));
+    AddBots(script->GetInt("NumBots"), false);
     return true;
   }
 
