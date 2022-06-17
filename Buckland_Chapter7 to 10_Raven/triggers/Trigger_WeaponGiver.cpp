@@ -113,6 +113,14 @@ void Trigger_WeaponGiver::Render()
       
         break;
 
+      case type_hand_grenade:
+      {
+          gdi->GreenPen();
+          gdi->Circle(Pos().x, Pos().y, 3.0);
+      }
+
+      break;
+
     }//end switch
   }
 }

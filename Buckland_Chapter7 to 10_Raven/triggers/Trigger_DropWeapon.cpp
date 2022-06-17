@@ -96,6 +96,13 @@ void Trigger_DropWeapon::Render()
             gdi->ClosedShape(m_vecRLVBTrans);
             break;
         }
+
+        case type_hand_grenade:
+        {
+            gdi->GreenPen();
+            gdi->Circle(Pos().x, Pos().y, 3.0);
+            break;
+        }
         default:
             Vector2D facing(-1, 0);
 
