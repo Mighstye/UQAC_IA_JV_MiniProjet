@@ -19,6 +19,7 @@
 
 #include "armory/Raven_Projectile.h"
 #include "armory/Projectile_Rocket.h"
+#include "armory/Projectile_Grenade.h"
 #include "armory/Projectile_Pellet.h"
 #include "armory/Projectile_Slug.h"
 #include "armory/Projectile_Bolt.h"
@@ -336,6 +337,14 @@ void Raven_Game::AddRocket(Raven_Bot* shooter, Vector2D target)
   m_Projectiles.push_back(rp);
 }
 
+//------------------------------ AddGrenade --------------------------------
+void Raven_Game::AddGrenade(Raven_Bot* shooter, Vector2D target)
+{
+    Raven_Projectile* rp = new Grenade(shooter, target);
+
+    m_Projectiles.push_back(rp);
+}
+
 //------------------------- AddRailGunSlug -----------------------------------
 void Raven_Game::AddRailGunSlug(Raven_Bot* shooter, Vector2D target)
 {
@@ -523,6 +532,10 @@ void Raven_Game::ChangeWeaponOfPossessedBot(unsigned int weapon)const
     case type_rocket_launcher:
       
       PossessedBot()->ChangeWeapon(type_rocket_launcher); return;
+
+    case type_hand_grenade:
+
+        PossessedBot()->ChangeWeapon(type_hand_grenade); return;
 
     case type_rail_gun:
       
