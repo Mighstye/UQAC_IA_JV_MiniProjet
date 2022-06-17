@@ -194,7 +194,6 @@ void Raven_Game::Update()
           //team 1
           if ((*curBot)->GetLeaderID() == (*curBot)->ID()) {
               m_gleaderBot = (*curBot);
-              continue;
           }
           if (countBots < botListDevidedByTwo) {
               m_gSquadLeader.push_back(*curBot);
