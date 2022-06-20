@@ -97,7 +97,7 @@ void Grenade::TestForImpact()
             (void*)&m_iDamageInflicted);
 
         //the grenade bounces off and slows down
-        m_vVelocity = m_vVelocity / -2;
+        m_vVelocity = m_vVelocity * -0.5;
     }
 
     //test for impact with a wall
@@ -109,7 +109,8 @@ void Grenade::TestForImpact()
         m_pWorld->GetMap()->GetWalls()))
     {
         //the grenade bounces off and slows down
-        m_vVelocity = m_vVelocity / -2;
+        m_vPosition = m_vImpactPoint;
+        m_vVelocity = m_vVelocity * -0.5;
 
         return;
     }
@@ -119,7 +120,7 @@ void Grenade::TestForImpact()
     if (Vec2DDistanceSq(Pos(), m_vTarget) < tolerance * tolerance)
     {
         //the grenade bounces off the ground so it only slows down
-        m_vVelocity = m_vVelocity / 2;
+        m_vVelocity = m_vVelocity * 0.5;
     }
 }
 

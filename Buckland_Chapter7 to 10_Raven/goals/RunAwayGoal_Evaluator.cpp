@@ -24,14 +24,25 @@ double RunAwayGoal_Evaluator::CalculateDesirability(Raven_Bot* pBot)
     {
         const double Tweaker = 1.0;
 
-        Desirability = Tweaker *
+        //score of the bot
+        const double BotScore = Tweaker *
             Raven_Feature::Health(pBot) *
             Raven_Feature::TotalWeaponStrength(pBot);
 
+        //score of the ennemy bot
+        const double EnnemyScore = Tweaker *
+            Raven_Feature::Health(pBot->GetTargetSys()->GetTarget()) *
+            Raven_Feature::TotalWeaponStrength(pBot->GetTargetSys()->GetTarget());
+
+        if (EnnemyScore > BotScore) {
+            Desirability = 1.0;
+        }
+        else {
+            Desirability = 0.0;
+        }
+
         //bias the value according to the personality of the bot
         Desirability *= m_dCharacterBias;
-
-        Desirability = 1 - Desirability;
     }
 
     return Desirability;
