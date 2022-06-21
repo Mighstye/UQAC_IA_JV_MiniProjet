@@ -353,6 +353,7 @@ bool Raven_Bot::HandleMessage(const Telegram& msg)
     }
   case Msg_ImLeader:
   {
+      // set the leader
       Raven_Bot* botLeader = (Raven_Bot*)msg.ExtraInfo;
       SetLeaderID(botLeader->ID());
       SetLeaderBot(botLeader);
@@ -360,11 +361,12 @@ bool Raven_Bot::HandleMessage(const Telegram& msg)
       return true;
   }
   case Msg_EnnemySquad:
+      // set the ennemy squad
       SetSquadEnnemyID(2);
       return true;
 
   case Msg_Attack:
-
+      // functions incomming soon
       //DontShootLeader();
       //ShootWithLeader();
       return true;

@@ -106,13 +106,14 @@ protected:
   bool                               m_bPossessed;
 
   // setting up the leader ID when posseded
-  int								 m_leaderBotID = 0;
-  int								 m_squadLeaderID = 0;
-  int								 m_squadEnnemyID = 0;
-  int								 m_LeaderTeamID = 0;
-  Raven_Bot*						 m_leaderBot;
-  std::list<Raven_Bot*>				 m_squadLeadTeam;
-  std::list<Raven_Bot*>				 m_squadEnnemyTeam;
+  // Both first and second are about to be merged soon
+  int								 m_leaderBotID = 0; // the selected bot for goal evaluator
+  int								 m_squadLeaderID = 0; // the bot id for raven_targetting system
+  int								 m_squadEnnemyID = 0; // the ennemy team id
+  int								 m_LeaderTeamID = 0; // the ally team ID
+  Raven_Bot*						 m_leaderBot; // informations of leader
+  std::list<Raven_Bot*>				 m_squadLeadTeam; // list of ally team
+  std::list<Raven_Bot*>				 m_squadEnnemyTeam; // list of ennemy team
 
   //a vertex buffer containing the bot's geometry
   std::vector<Vector2D>              m_vecBotVB;

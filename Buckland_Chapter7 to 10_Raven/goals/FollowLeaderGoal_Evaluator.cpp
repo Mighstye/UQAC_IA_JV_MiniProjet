@@ -16,6 +16,7 @@
 //-----------------------------------------------------------------------------
 double FollowLeaderGoal_Evaluator::CalculateDesirability(Raven_Bot* pBot)
 {
+	// if teams are set and this is not the leader
 	if (pBot->GetLeaderID() != 0 && pBot->GetLeaderID() != pBot->ID()) {
 		return 100;
 	}

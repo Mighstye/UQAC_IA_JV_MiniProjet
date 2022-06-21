@@ -31,6 +31,7 @@ void Raven_TargetingSystem::Update()
     if ((*curBot)->isAlive() && (*curBot != m_pOwner))
     {
       double dist = Vec2DDistanceSq((*curBot)->Pos(), m_pOwner->Pos());
+      // Added conditions to shoot if not squad lead or allies
       if (((*curBot)->GetSquadLeaderID() != (*curBot)->GetLeaderTeamID()) || ((*curBot)->GetSquadLeaderID() != m_pOwner->GetSquadLeaderID())) {
           if (dist < ClosestDistSoFar)
           {

@@ -209,16 +209,16 @@ void Raven_Game::Update()
       // Give a spawn to dropped weapons
 
       WeaponMap::iterator it;
-
+      // get all weapons with ammo and in iventory
       for (it = allWeaponInventory.begin(); it != allWeaponInventory.end(); ++it) {
           if (!it->second || it->second->NumRoundsRemaining() == 0) {
               continue;
           }
-          Trigger_DropWeapon* test = new Trigger_DropWeapon(*curBot);
-          test->SetEntityType(it->first);
+          Trigger_DropWeapon* dropWP = new Trigger_DropWeapon(*curBot);
+          dropWP->SetEntityType(it->first);
 
-          m_pMap->GetTriggerSystem().Register(test);
-          EntityMgr->RegisterEntity(test);
+          m_pMap->GetTriggerSystem().Register(dropWP);
+          EntityMgr->RegisterEntity(dropWP);
       }
 
       //change its status to spawning
@@ -381,6 +381,7 @@ void Raven_Game::NotifyAllBotsOfRemoval(Raven_Bot* pRemovedBot)const
     }
 }
 
+// Creating squad, leader and ennmy team, separate all the bots in two squad
 void Raven_Game::CreateAndNotifyAllBotOfLeader() {
     int countBots = 0;
     int botListDevidedByTwo = m_Bots.size() / 2;
@@ -407,6 +408,8 @@ void Raven_Game::CreateAndNotifyAllBotOfLeader() {
     NotifyToFollowLeader();
     NotifyEnnemyTeam();
 }
+
+// Send a message to the SquadLeader to follow him
 void Raven_Game::NotifyToFollowLeader() {
     std::list<Raven_Bot*>::iterator curBot = m_gSquadLeader.begin();
     for (curBot; curBot != m_gSquadLeader.end(); ++curBot)
@@ -429,6 +432,8 @@ void Raven_Game::NotifyToAttackWithLeader(std::list<Raven_Bot*>* LeaderSquad)con
             LeaderSquad);
     }
 }
+
+// Notify ennmi team their allies
 void Raven_Game::NotifyEnnemyTeam() {
     std::list<Raven_Bot*>::iterator curBot = m_gSquadEnnemies.begin();
     for (curBot; curBot != m_gSquadEnnemies.end(); ++curBot)
@@ -609,6 +614,7 @@ void Raven_Game::ClickRightMouseButton(POINTS p)
   {
     m_pSelectedBot->TakePossession();
     m_isLeaderSetActive = true;
+    // Create a squad for leader and a ennemy squad
     CreateAndNotifyAllBotOfLeader();
     //clear any current goals
     m_pSelectedBot->GetBrain()->RemoveAllSubgoals();
